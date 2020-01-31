@@ -48,7 +48,7 @@ class SignupStep1 extends Component {
               <link href={all} rel="stylesheet" /> 
               {/* Bootstrap CSS */}
               <link rel="stylesheet" href={bootstrapCss} />
-              <title>Heroes Meet - Find Your Mate</title>
+              <title>HeroesMeet - Find Your Mate</title>
               <header id="signup">
                 <div className="container">
                     <div className="row">
@@ -120,7 +120,7 @@ class SignupStep1 extends Component {
     <div class="row">
       <div class="col-md-12">
         <div class="copy-right">
-          <p> © 2020 Heroesmeet | All Rights Reserved | English (United Kingdom)</p>
+          <p> © 2020 HeroesMeet | All Rights Reserved | English (United Kingdom)</p>
         </div>
       </div>
     </div>

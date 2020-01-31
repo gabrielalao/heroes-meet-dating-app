@@ -51,9 +51,9 @@ class AppIndex extends Component {
               <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
               <meta name="description" content="Start meeting new people in your area! If you already have an account"></meta>
               <MetaTags>
-                <title>Heroes Meet - Find Your Mate</title>
+                <title>HeroesMeet - Find Your Mate</title>
                 <meta name="description" content="Start meeting new people in your area! If you already have an account" />
-                <meta property="og:title" content="Heroes Meet - Find Your Mate" />
+                <meta property="og:title" content="HeroesMeet - Find Your Mate" />
                 <meta property="og:image" content={favicon} />
               </MetaTags>
               <Favicon url={favicon}/>
@@ -66,7 +66,7 @@ class AppIndex extends Component {
     <div className="row">
       <div className="col-md-3">
         <div className="heroesmeet_main_logo">
-          <img src={heroesmeetLogo} />
+          <a href="#"><img src={heroesmeetLogo} /></a>
         </div>
 
         <span id="mobile-toogle-opner" style={{"font-size":30,"cursor":'pointer'}} onclick={()=>this.openNav}>&#9776;</span>
@@ -82,7 +82,7 @@ class AppIndex extends Component {
           <div className="collapse navbar-collapse" id="site-main-bar">
             <ul className="navbar-nav">
               <li className="nav-item active">
-                <a className="nav-link" href="#">HOME <span className="sr-only">(current)</span></a>
+                <a className="nav-link" href="#">GUIDELINES <span className="sr-only">(current)</span></a>
               </li>
               <li className="nav-item">
                 <a className="nav-link" href="#">STORIES</a>
@@ -107,7 +107,7 @@ class AppIndex extends Component {
         </div>
         <ul className="navbar-nav">
           <li className="nav-item active">
-            <a className="nav-link" href="#">HOME <span className="sr-only">(current)</span></a>
+            <a className="nav-link" href="#">GUIDELINES <span className="sr-only">(current)</span></a>
           </li>
           <li className="nav-item">
             <a className="nav-link" href="#">STORIES</a>
@@ -126,9 +126,9 @@ class AppIndex extends Component {
           <div className="row">
             <div className="col-md-12">
 
-              <a href="#" className="btn theme-color-btn btn-primary" data-toggle="modal" data-target="#login-modal"><i className="fab fa-android"></i> Get HeroesMeet</a>
+              <a href="#" className="btn theme-color-btn btn-primary" data-toggle="modal" data-target="#login-modal"><i className="fab fa-android"></i> Get HeroesMeett</a>
 
-              <a href="#" className="btn theme-color-btn btn-primary" data-toggle="modal" data-target="#login-modal"><i className="fab fa-apple"></i> Get HeroesMeet</a>
+              <a href="#" className="btn theme-color-btn btn-primary" data-toggle="modal" data-target="#login-modal"><i className="fab fa-apple"></i> Get HeroesMeett</a>
 
             </div>
           </div>
@@ -162,7 +162,7 @@ class AppIndex extends Component {
         <div className="carousel-caption">
           <h3>Are You Waiting For Dating?</h3>
           <p>Start meeting new people in your area! If you already have an account, 
-          <br /> sign in to use Heroes Meet on the web.</p>
+          <br /> sign in to use HeroesMeet on the web.</p>
           <div className="slider-btn">
             <a href="#" className="btn theme-color-them-btn btn-primary" data-toggle="modal" data-target="#login-modal">LOGIN</a>
             <a onClick={()=>this.props.history.push('/signupStepOne')} className="btn theme-color-them-btn btn-primary" data-toggle="modal" data-target="#signup-modal">SIGN UP</a>
@@ -180,7 +180,7 @@ class AppIndex extends Component {
       <div className="col-6 col-md-3">
         <div className="secure-tags">
          <img src={verifiedLogo} alt="New York" />
-         <h3>100% Verified</h3>
+         <h3>Verified Profiles</h3>
        </div>
 
      </div>
@@ -199,7 +199,7 @@ class AppIndex extends Component {
  <div className="col-6 col-md-3">
   <div className="secure-tags">
    <img src={smartMatching} alt="New York" />
-   <h3>Smart Matching</h3>
+   <h3>Smart-Matching</h3>
  </div>
 </div>
 </div>
@@ -210,9 +210,8 @@ class AppIndex extends Component {
   <div className="container">
     <div className="row">
       <div className="col-md-12">
-        <h2 className="section-title">Steps to  Finding Your Soul Mate</h2>
-        <p className="text-center">Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
-        sed do eiusmod tempor incididunt ut labore e t dolore magna aliqua. </p>
+        <h2 className="section-title">Steps to Finding Your Soulmate</h2>
+        <p className="text-center">On HeroesMeet, connecting is as simple as 1,2,3...</p>
       </div>
     </div>
 
@@ -220,7 +219,7 @@ class AppIndex extends Component {
       <div className="row no-gutters justify-content-end justify-content-md-around align-items-start  timeline-nodes">
         <div className="col-10 col-md-5 order-3 order-md-1 timeline-content">
           <h3 className=" text-light">CREATE PROFILE</h3>
-          <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+          <p>Set up a personalized profile to introduce yourself to the HeroesMeet community.</p>
         </div>
         <div className="col-2 col-sm-1 px-md-3 order-2 timeline-image text-md-center">
           <img src={createProfile} className="img-fluid" alt="img" />
@@ -232,7 +231,7 @@ class AppIndex extends Component {
       <div className="row no-gutters justify-content-end justify-content-md-around align-items-start  timeline-nodes">
         <div className="col-10 col-md-5 order-3 order-md-1 timeline-content">
           <h3 className=" text-light">FIND MATCHES</h3>
-          <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. </p>
+          <p>Put yourself out there!.</p>
         </div>
         <div className="col-2 col-sm-1 px-md-3 order-2 timeline-image text-md-center">
           <img src={createProfile} className="img-fluid" alt="img" />
@@ -243,8 +242,8 @@ class AppIndex extends Component {
       </div>
       <div className="row no-gutters justify-content-end justify-content-md-around align-items-start  timeline-nodes">
         <div className="col-10 col-md-5 order-3 order-md-1 timeline-content">
-          <h3 className=" text-light">FIND MATCHES</h3>
-          <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. </p>
+          <h3 className=" text-light">SPARK UP A CONVERSATION</h3>
+          <p>See what all HeroesMeet has to offer by connecting with others with similar interests.</p>
         </div>
         <div className="col-2 col-sm-1 px-md-3 order-2 timeline-image text-md-center">
           <img src={createProfile} className="img-fluid" alt="img" />
@@ -262,8 +261,8 @@ class AppIndex extends Component {
 
    <div className="row">
     <div className="col-md-12">
-      <h2 className="section-title">Our New Members</h2>
-      <p className="text-center">HeroesMeet was first founded to challenge the antiquated rules of dating. Now, heroesmet empowers users to connect with confidence Whether it’s dating, networking, or simply making friends online, We’ve shaken up outdated gender norms by making the first move optional for both men and women. to make the first move, shaking up outdated gender norms. We Prioritize kindness and respect, providing a safe online community for users to build new relationships.</p>
+      <h2 className="section-title">About HeroesMeet</h2>
+      <p className="text-center">HeroesMeet was founded to challenge the antiquated rules of dating by empowering users to connect by dating, networking, or simply making friends online. We’ve shaken up outdated gender norms by making the first move optional for both men and women. We provide a safe, online community for users to build new relationships that prioritize kindness and respect.</p>
     </div>
   </div>
 </div>
@@ -283,9 +282,7 @@ class AppIndex extends Component {
  <div className="container">
   <div className="row">
     <div className="col-md-12">
-      <h2 className="section-title">Follow @HeroesMeet</h2>
-      <p className="text-center">Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
-      sed do eiusmod tempor incididunt ut labore e t dolore magna aliqua. </p>
+      <h2 className="section-title">Add us on social media!</h2>
     </div>
   </div>
 
@@ -339,7 +336,7 @@ class AppIndex extends Component {
     <div className="row">
       <div className="col-md-12">
         <div className="copy-right">
-          <p> © 2020 Heroesmeet | All Rights Reserved </p>
+          <p> © 2020 HeroesMeet | All Rights Reserved </p>
         </div>
       </div>
     </div>
@@ -383,7 +380,7 @@ class AppIndex extends Component {
                   <span aria-hidden="true">&times;</span>
                 </button>
                 <h2>Find My Kind</h2>
-                <p>Why heroesmeet? Everyone wants someone to save them from the malady of being in the single dating lifestyle.  So as much as you are saving her from she's saving you too.</p>
+                <p>Why HeroesMeet? Everyone wants someone to save them from the malady of being in the single dating lifestyle.  So as much as you are saving her from she's saving you too.</p>
               </div>
             </div>
           </div>
@@ -430,7 +427,7 @@ class AppIndex extends Component {
                   <span aria-hidden="true">&times;</span>
                 </button>
                 <h2>Find My Kind</h2>
-                <p>Why heroesmeet? Everyone wants someone to save them from the malady of being in the single dating lifestyle.  So as much as you are saving her from she's saving you too.</p>
+                <p>Why HeroesMeet? Everyone wants someone to save them from the malady of being in the single dating lifestyle.  So as much as you are saving her from she's saving you too.</p>
               </div>
             </div>
           </div>
