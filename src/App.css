@@ -2,6 +2,21 @@
   text-align: center;
 }
 
+.nav {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  min-height: 10vh;
+  color: black
+}
+
+.nav-links {
+  width: 40%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  list-style: none;
+}
 .App-logo {
   height: 40vmin;
   pointer-events: none;

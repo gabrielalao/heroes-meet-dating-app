@@ -1,0 +1,973 @@
+@import url('https://fonts.googleapis.com/css?family=Raleway:400,500,700&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Niconne&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Montserrat:300,400,500,600,700&display=swap');
+
+
+body
+{
+	/*font-family: 'Raleway', sans-serif;*/
+	font-family: 'Montserrat', sans-serif;
+	font-weight: 400;
+}
+
+
+select.form-control 
+{
+  -webkit-appearance: none;
+   -moz-appearance:    none;
+   appearance:         none;
+   background-image:url('../images/select_arrow.png');
+   background-repeat: no-repeat; 
+    background-position: right center;
+    background-size: 25px;
+}
+
+
+.modal-body .close {
+    line-height: .5;
+}
+
+#mobile-toogle-opner {
+    display: none;
+}
+
+header .heroesmeet_main_logo img
+{
+	width: 100%;
+}
+
+header .navbar-expand-lg .navbar-collapse
+{
+	justify-content: flex-end;
+}
+
+header .navbar.navbar-expand-lg.navbar-light ul li a {
+	font-family: 'Montserrat', sans-serif;
+	font-weight: bold;
+}
+
+.carousel-inner img {
+    width: 100%;
+    height: 100%;
+  }
+
+.carousel.slide h3
+{
+/*font-family: 'Niconne', cursive;*/
+font-family: 'Montserrat', sans-serif;
+font-size: 40px;
+margin: 0 0 20px 0;
+color: #212529;
+font-weight: bold;
+}
+
+.carousel.slide p
+{
+	color: #000;
+	margin: 0 0 24px 0;
+	font-size: 18px;
+}
+
+.section-title {
+    /*font-family: 'Niconne', cursive;*/
+    font-family: 'Montserrat', sans-serif;
+    font-size: 40px;
+    margin: 50px 0 20px;
+    text-align: center;
+    font-weight: bold;
+}
+
+.btn.theme-color-btn.btn-primary:hover {
+color:#fff;/* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#ea0164+0,990462+100 */
+background: #ea0164; /* Old browsers */
+background: -moz-linear-gradient(left,  #ea0164 0%, #990462 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(left,  #ea0164 0%,#990462 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(to right,  #ea0164 0%,#990462 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ea0164', endColorstr='#990462',GradientType=1 ); /* IE6-9 */
+border: none;
+}
+
+.btn.theme-color-btn.btn-primary {
+background: #fff;
+color:#ff006b;
+border: none;
+}
+
+.btn.theme-color-them-btn.btn-primary
+{
+color:#fff;/* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#ea0164+0,990462+100 */
+background: #ea0164; /* Old browsers */
+background: -moz-linear-gradient(left,  #ea0164 0%, #990462 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(left,  #ea0164 0%,#990462 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(to right,  #ea0164 0%,#990462 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ea0164', endColorstr='#990462',GradientType=1 ); /* IE6-9 */
+border: none;
+}
+
+.btn.theme-color-them-btn.btn-primary:hover
+{
+background:#fff;
+border: solid 1px #ccc;
+color:#000;
+}
+
+
+
+#header-slider .carousel-caption {
+bottom: 110px;
+background: rgba(255,255,255,0.80);
+padding-top: 40px;
+padding-bottom: 40px;
+}
+
+
+#header-slider .btn.theme-color-them-btn.btn-primary {
+    font-size: 20px;
+    width: 15%;
+}
+
+
+
+#security-tags {
+    background: #fafbff;
+    padding: 30px 0;
+}
+
+#security-tags .secure-tags {
+    text-align: center;
+    background:#fff;
+    border-radius: 15px;
+    padding: 20px 0;
+}
+
+#security-tags .secure-tags h3 {
+    font-size: 18px;
+    margin: 10px 0 0 0;
+}
+
+#steps-to-finding-your-soul-mate {
+    text-align: center;
+}
+
+
+.timeline {
+    padding: 50px 0;
+    position: relative;
+}
+.timeline-nodes {
+        padding-bottom: 25px;
+        position: relative;
+    }
+.timeline-nodes:nth-child(even) {
+    flex-direction: row-reverse;
+}
+.timeline h3, .timeline p {
+    padding: 5px 15px;
+} 
+.timeline h3{
+font-weight: lighter;
+background: #ea0164; /* Old browsers */
+background: -moz-linear-gradient(left,  #ea0164 0%, #990462 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(left,  #ea0164 0%,#990462 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(to right,  #ea0164 0%,#990462 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ea0164', endColorstr='#990462',GradientType=1 ); /* IE6-9 */
+}
+
+
+.timeline p, .timeline time {
+    color: #000;
+}
+.timeline::before {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    width: 0;
+    border-left: 2px dashed #990462;
+    height: 100%;
+    z-index: 1;
+    transform: translateX(-50%);
+}
+.timeline-content {
+    position: relative;
+    border-radius: 0 0 10px 10px;
+    box-shadow: 0px 3px 25px 0px rgba(10, 55, 90, 0.2)
+}
+.timeline-nodes:nth-child(odd) h3,
+.timeline-nodes:nth-child(odd) p {
+    text-align: right;
+}
+
+.timeline-nodes:nth-child(2) h3, .timeline-nodes:nth-child(2) p {
+    text-align: left;
+}
+
+.timeline-nodes:nth-child(odd) .timeline-date {
+    text-align: left;
+}
+ 
+.timeline-nodes:nth-child(even) .timeline-date {
+    text-align: right;
+}
+
+
+
+
+.timeline-nodes:nth-child(odd) .timeline-content::after {
+    content: "";
+    position: absolute;
+    top: 5%;
+    left: 100%;
+    width: 0;
+    border-left: 10px solid #990462;
+    border-top: 10px solid transparent;
+    border-bottom: 10px solid transparent;
+}
+
+
+.timeline-nodes:nth-child(even) .timeline-content::after {
+    content: "";
+    position: absolute;
+    top: 5%;
+    right: 100%;
+    width: 0;
+    border-right: 10px solid #990462;
+    border-top: 10px solid transparent;
+    border-bottom: 10px solid transparent;
+}
+
+
+
+.timeline-image {
+    position: relative;
+    z-index: 100;
+}
+
+.timeline-image::before {
+    content: "";
+    width: 80px;
+    height: 80px;
+    border: 2px dashed #990462;
+    border-radius: 50%;
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    background-color: #fff;
+    z-index: 1;
+}
+
+.timeline-image img {
+    position: relative;
+    z-index: 100;
+}
+
+#our-new-mambers .photo {
+    height: 260px;
+}
+
+#our-new-mambers {
+    padding: 0 0 60px 0;
+}
+
+#our-new-mambers .photo img
+{
+width: 100%;
+}
+
+#our-new-mambers .photo {
+    height: 260px;
+}
+
+
+#our-new-mambers .photo .info {
+position: absolute;
+bottom: 0;
+background: 
+rgba(255, 255, 255, 0.90);
+width: 100%;
+z-index: 10;
+padding: 5px 15px;
+}
+
+
+#our-new-mambers .photo:hover .team-pic-overlay
+{
+display: block;
+transition: all;
+}
+
+#our-new-mambers .team-pic-overlay {
+position: absolute;
+background: rgba(255,255,255,0.90);
+z-index: 1;
+top: 0;
+height: 250px;
+width: 100%;
+text-align: center;
+line-height: 250px;
+display: none;
+}
+
+#our-new-mambers .team-pic-overlay img
+{
+	width: 20%;
+	height: auto;
+}
+
+#why-heroesmeet
+{
+background:url('../images/why-heroesmeet-bg.png'); 
+background-size: 100%; 
+padding: 0 0 60px 0;
+}
+
+#why-heroesmeet h2.section-title
+{
+	color: #fff;
+}
+
+#why-heroesmeet p
+{
+	color:#fff;
+}
+
+
+#header-slider img
+{
+	width: 100%;
+}
+
+#header-slider {
+    padding: 5px 0 35px 0;
+}
+
+
+#instagram-follow img
+{
+	width: 100%;
+}
+
+
+#footer .footer-logo {
+    text-align: right;
+}
+
+
+.footer-social-icon {
+    margin: 24px 0 0 0;
+}
+
+.footer-social-icon ul {
+    padding: 0;
+    margin: 0;
+}
+
+.footer-social-icon ul li {
+    display: inline-block;
+}
+
+.footer-social-icon ul li a i {
+    font-size: 30px;
+    color: #000;
+}
+
+.footer-social-icon ul li a:hover i
+{
+	color:#920264;
+} 
+
+.footer-main-nav {
+    padding: 0;
+    margin: 0;
+    text-align: center;
+    margin: 20px 0 24px 0;
+}
+
+
+.footer-main-nav ul {
+    padding: 0;
+    margin: 0;
+}
+
+.footer-main-nav ul li {
+    display: inline-block;
+    text-align: center;
+    padding: 0 15px;
+    border-left: solid 1px #ccc;
+}
+
+.footer-main-nav ul li:first-child
+{
+	border: none;
+}
+
+.footer-main-nav ul li a {
+    color: #000;
+}
+
+.footer-main-nav ul li a:hover
+{
+	color:#920264;
+}
+
+.copy-right {
+    text-align: center;
+}
+
+.copy-right p
+{
+color: #919191;
+}
+
+
+#login-modal .modal-body, #signup-modal .modal-body
+{
+	padding: 0;
+}
+
+#login-modal .modal-body p, #signup-modal .modal-body p
+{
+margin: 0;
+}
+
+#login-modal .login-left, #signup-modal .login-left
+{
+background:url('../images/login-left-bg.png'); 
+background-size: 100%; 
+height: 390px;
+background-repeat: no-repeat;
+text-align: center;
+color:#fff;
+}
+
+#login-modal .login-left h2, #signup-modal .login-left h2 {
+font-family: 'Niconne', cursive;
+font-size: 60px;
+margin: 140px 0 20px 0;
+display: inline-block;
+}
+
+#login-modal .login-form form, #signup-modal .login-form form  {
+    margin: 30px 0 0 0;
+}
+
+#login-modal .login-form, #signup-modal .login-form {
+text-align: center;
+background:url('../images/login-form-bg.png'); 
+background-size: cover;
+height: 390px;
+padding: 30px 20px;
+}
+
+
+#login-modal .login-form .input-group, #signup-modal .login-form .input-group {
+    border-bottom: solid 1px #ccc;
+}
+
+#login-modal .login-form .login-form.input-group, #signup-modal .login-form .login-form.input-group 
+{
+border-bottom: solid 1px #ccc;
+}
+
+#login-modal .login-form .input-group  #basic-addon1, #signup-modal .login-form .input-group  #basic-addon1  {
+    background: no-repeat;
+    border: none;
+}
+
+#login-modal .login-form .input-group .form-control, #signup-modal .login-form .input-group .form-control  {
+    border: none;
+    background: no-repeat;
+}
+
+
+#login-modal .login-form .input-group #basic-addon1 i, #signup-modal .login-form .input-group #basic-addon1 i 
+{
+	color: #920264;
+}
+
+.col-md-4.user-message-box-colum .col-md-12 {
+
+    padding: 0;
+
+}
+
+#user-message-box .user-profile-tag {
+    border-bottom: solid 1px  #ccc;
+    padding: 14px 0;
+}
+
+#user-message-box .user-profile-tag .user-imgae {
+display: inline-block;
+width: 33%;
+text-align: center;
+}
+
+#user-message-box .user-profile-tag .user-name {
+    display: inline-block;
+    width: 60%;
+}
+
+#user-message-box .user-profile-tag .user-name h3
+{
+	font-weight:bold;
+	font-size: 20px;
+}
+
+
+#user-message-box .user-profile-tag .user-name .edit
+{
+float: right;
+width: 100%;
+text-align: right;
+}
+
+#user-message-box .match-queue {
+display: inline-block;
+width: 100%;
+border-bottom: solid 1px #ccc;
+text-align: center;
+padding: 10px 0;
+}
+
+#user-message-box .match-queue .user_1 {
+
+    border: dotted 2px #ccc;
+    height: 70px;
+    width: 70px;
+    border-radius: 50px; 
+    display: inline-block;
+
+}
+
+
+#user-message-box .conversations .chat-row {
+    margin: 15px 0 15px 0;
+    padding: 0 0 0 15px;
+}
+
+#user-message-box .conversations .chat-row:nth-child(2n) {
+    background: #ececec;
+}
+
+#user-message-box .conversations .chat-row .user-imgae {
+    float: left;
+    height: 70px;
+    overflow: hidden;
+    width: 70px;
+    margin: 0 10px 0 0;
+}
+
+#user-message-box .conversations .chat-row .user-imgae img
+{
+	width: 100%;
+}
+
+#user-message-box .conversations .chat-row .user-name {
+    display: inline-block;
+}
+
+.user-message-box-colum {
+border-right: solid 1px #ccc;
+border-left: solid 1px #ccc;
+border-top: solid 1px #ccc;
+border-bottom: solid 1px #ccc;
+}
+
+#user-message-box .conversations .chat-row .user-name h3
+{
+	font-size: 20px;
+}
+
+
+.col-md-8.user-message-body-colum {
+    text-align: center;
+    background: url('../images/message-body-pattrent.png');
+    background-size: 100%;
+    border-top: solid 1px #ccc;
+	border-right: solid 1px#ccc;
+	border-bottom: solid 1px #ccc;
+}
+
+.col-md-8.user-message-body-colum button {
+    width: 50%;
+    margin: 0 0 10px 0;
+}
+
+.col-md-8.user-message-body-colum h2 {
+    font-weight: bold;
+    margin: 90px 0 0 0;
+}
+
+.col-md-8.user-message-body-colum p {
+    font-weight: bold;
+    margin: 10px 0 10px 0;
+    font-size: 18px;
+}
+
+.find-heroes img
+{
+	width: 100%;
+}
+
+
+.sidenav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 999;
+  top: 0;
+  left: 0;
+  background: #ea0164; /* Old browsers */
+background: -moz-linear-gradient(left,  #ea0164 0%, #990462 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(left,  #ea0164 0%,#990462 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(to right,  #ea0164 0%,#990462 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ea0164', endColorstr='#990462',GradientType=1 ); /* IE6-9 */
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding: 10px 0 0 0;
+  text-align:center;
+
+}
+
+.sidenav .menu-logo
+{
+	width: 100%;
+	padding: 0 0 0 10px;
+}
+
+.sidenav .menu-logo img {
+    width: 70%;
+    float: left;
+}
+
+.sidenav a {
+padding: 5px 0 5px 20px;
+text-decoration: none;
+font-size: 18px;
+color:#fff;
+display: block;
+transition: 0.3s;
+font-family: 'Raleway', sans-serif;
+font-weight: bold;
+text-align: left;
+}
+
+.sidenav .navbar-nav {
+    width: 100%;
+    padding: 40px 0 40px 15px;
+}
+
+.sidenav a:hover{
+  color: #f1f1f1;
+}
+
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+
+#footer {
+    padding: 40px 0;
+}
+
+
+/* singup screen */
+
+#signup .heroesmeet_main_logo {
+    width: 30%;
+    margin: 60px auto 0;
+}
+
+#signup-screen {
+    padding: 5% 0 10%;
+}
+
+#signup-screen .get-started {
+    font-size: 50px;
+    font-weight: bold;
+    margin: 0 0 20px 0;
+}
+
+#signup-screen .facebook.btn.btn-primary {
+    background: #4a629e;
+    border: none;
+    border-radius: 50px;
+    padding: 0 20px;
+    line-height: 47px;
+    height: 50px;
+}
+
+
+#signup-screen .use-my-contact {
+    color: #920264;
+    font-size: 22px;
+    font-weight: bold;
+}
+
+
+
+#signup-screen .or {
+    margin: 25px 0;
+}
+
+
+#signup-screen .singup-policy-content {
+    font-size: 20px;
+}
+
+#signup-screen .singup-policy-content.thank-you {
+    margin: 0;
+    color: #920264;
+}
+
+#signup-screen .btn.theme-color-them-btn.btn-primary {
+font-size: 24px;
+padding: 5px 0 10px;
+width: 100%;
+margin: 20px 0 20px 0;
+}
+
+
+#signup-screen .otp {
+
+    text-align: center;
+    font-size: 18px;
+
+}
+
+
+#signup-screen .input-group.dob .form-group {
+    margin: 0 5px 0 0;
+    width: 31%;
+}
+
+#signup-screen .input-group.category .form-group {
+    margin: 0 5px 0 0;
+    /* width: 31%; */
+}
+
+#signup-screen .input-group.gender-select {
+    border: solid 1px #ccc;
+    border-radius: 10px;
+    padding: 10px 0;
+    margin: 0 0 10px 0;
+}
+
+#signup-screen .input-group.gender-select .input-group-text
+{
+    background: none;
+    border: none;
+
+}
+
+#signup-screen .input-group.gender-select h3 {
+    font-size: 20px;
+    margin: 0 0 0 0;
+}
+
+
+#signup-screen .drag-photos {
+    /* height: 100px;
+    border: dotted 2px #ccc; */
+    border-radius: 20px;
+}
+
+#signup-screen .drag-photos .drag-photos-colum {
+height: 90px;
+background:#ccc;
+margin: 3px;
+border-radius: 20px;
+}
+
+#signup-screen .drag-photos .drag-photos-colum p {
+    text-align: center;
+    line-height: 90px;
+}
+
+
+#signup-screen .upload_images li {
+    display: inline-block;
+    width: 30%;
+}
+
+#signup-screen .upload_images li img
+{
+    width: 100%;
+}
+
+#signup-screen .upload_images p {
+    margin: 15px 0 15px 0;
+    text-align: center;
+}
+
+
+#signup-screen .uploaded_images .upload_images li {
+    border-radius: 15px;
+    overflow: hidden;
+}
+
+
+/* end singup Screen */
+
+
+
+
+
+/*small device style*/
+
+@media (max-width: 767px) {
+    .timeline-nodes:nth-child(odd) h3,
+    .timeline-nodes:nth-child(odd) p {
+    text-align: left
+}
+.timeline-nodes:nth-child(even) {
+    flex-direction: row;
+}
+    .timeline::before {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 4%;
+    width: 0;
+    border-left: 2px dashed var(--blue);
+    height: 100%;
+    z-index: 1;
+    transform: translateX(-50%);
+}
+.timeline h3 {
+    font-size: 1.7rem;
+}
+.timeline p {
+    font-size: 14px;
+}
+.timeline-image {
+    position: absolute;
+    left: 0%;
+    top: 60px;
+    /*transform: translateX(-50%;);*/
+}
+.timeline-nodes:nth-child(odd) .timeline-content::after {
+    content: "";
+    position: absolute;
+    top: 5%;
+    left: auto;
+    right: 100%;
+    width: 0;
+    border-left: 0;
+    border-right: 10px solid #990462;
+    border-top: 10px solid transparent;
+    border-bottom: 10px solid transparent;
+}
+.timeline-nodes:nth-child(even) .timeline-content::after {
+    content: "";
+    position: absolute;
+    top: 5%;
+    right: 100%;
+    width: 0;
+    border-right: 10px solid #990462;
+    border-top: 10px solid transparent;
+    border-bottom: 10px solid transparent;
+}
+.timeline-nodes:nth-child(even) .timeline-date {
+    text-align: left;
+}
+.timeline-image::before {
+    width: 65px;
+    height: 65px;
+}
+}
+
+/*extra small device style */
+@media (max-width: 575px) {
+    .timeline::before {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 3%;
+}
+.timeline-image {
+    position: absolute;
+    left: -5%;
+    }
+.timeline-image::before {
+    width: 60px;
+    height: 60px;
+}
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+
+@media screen and (max-width: 480px) {
+
+#topbar .menubar.col-md-9 {
+    display: none !important;
+}
+
+#header-slider .carousel-caption {
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.carousel.slide h3 {
+    font-size: 14px;
+    margin: 0 0 10px 0;
+}
+
+.carousel.slide p {
+    color: #000;
+    margin: 0 0 24px 0;
+    font-size: 8px;
+}
+
+.heroesmeet_main_logo {
+    width: 70%;
+    float: left;
+}
+
+#mobile-toogle-opner {
+    float: right;
+}
+
+#header-slider .carousel-caption {
+    bottom: 10px;
+}
+
+#security-tags .secure-tags { 
+margin: 0 0 20px 0;
+}
+
+#mobile-toogle-opner {
+    display: block;
+}
+
+#menu-footer {
+    width: 100%;
+}
+
+.sidenav #menu-footer .btn.theme-color-btn.btn-primary 
+{
+width: 46%;
+display: inline-block;
+margin: 12px 0 0 0;
+font-size: 15px;
+}
+
+#header-slider .btn.theme-color-them-btn.btn-primary {
+    font-size: 14px;
+    width: 40%;
+}
+
+}
+

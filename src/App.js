@@ -1,25 +1,41 @@
 import React from 'react';
-import logo from './logo.svg';
+
 import './App.css';
+import { Route, BrowserRouter as Router, Switch } from 'react-router-dom'
+import AppIndex from './component/index';
+import Dashboard from './component/Dashboard';
+import signupStep1 from './component/signup/signupStep1';
+import signupStep2 from './component/signup/signupStep2';
+import signupStep3 from './component/signup/signupStep3';
+import signupStep4 from './component/signup/signupStep4';
+import signupStep5 from './component/signup/signupStep5';
+import signupStep6 from './component/signup/signupStep6';
+import signupStep7 from './component/signup/signupStep7';
+import signupStep8 from './component/signup/signupStep8';
+import signupStep9 from './component/signup/signupStep9';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+
+    <Router>
+    <div className='App'>
+    <Switch>
+    <Route path="/" exact component={AppIndex} />
+    <Route path="/signupStepOne" component={signupStep1} />
+    <Route path="/signupStepTwo" component={signupStep2} />
+    <Route path="/signupStepThree" component={signupStep3} />
+    <Route path="/signupStepFour" component={signupStep4} />
+    <Route path="/signupStepFive" component={signupStep5} />
+    <Route path="/signupStepSix" component={signupStep6} />
+    <Route path="/signupStepSeven" component={signupStep7} />
+    <Route path="/signupStepEight" component={signupStep8} />
+    <Route path="/signupStepNine" component={signupStep9} />
+    <Route path="/dashboard" component={Dashboard} />
+     
+     </Switch>
     </div>
+ 
+  </Router>
   );
 }
 
