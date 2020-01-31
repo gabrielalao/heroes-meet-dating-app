@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css?family=Raleway:400,500,700&display=swap');
-@import url('https://fonts.googleapis.com/css?family=Niconne&display=swap');
+
 @import url('https://fonts.googleapis.com/css?family=Montserrat:300,400,500,600,700&display=swap');
 
 
@@ -124,6 +124,7 @@ padding-bottom: 40px;
 #header-slider .btn.theme-color-them-btn.btn-primary {
     font-size: 20px;
     width: 15%;
+    margin: 10px;
 }
 
 
@@ -748,11 +749,6 @@ margin: 20px 0 20px 0;
     width: 31%;
 }
 
-#signup-screen .input-group.category .form-group {
-    margin: 0 5px 0 0;
-    /* width: 31%; */
-}
-
 #signup-screen .input-group.gender-select {
     border: solid 1px #ccc;
     border-radius: 10px;
@@ -774,8 +770,8 @@ margin: 20px 0 20px 0;
 
 
 #signup-screen .drag-photos {
-    /* height: 100px;
-    border: dotted 2px #ccc; */
+    height: 100px;
+    border: dotted 2px #ccc;
     border-radius: 20px;
 }
 

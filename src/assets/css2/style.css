@@ -1,10 +1,34 @@
 @import url('https://fonts.googleapis.com/css?family=Raleway:400,500,700&display=swap');
-@import url('https://fonts.googleapis.com/css?family=Niconne&display=swap');
+
+@import url('https://fonts.googleapis.com/css?family=Montserrat:300,400,500,600,700&display=swap');
 
 
 body
 {
-	font-family: 'Raleway', sans-serif;
+	/*font-family: 'Raleway', sans-serif;*/
+	font-family: 'Montserrat', sans-serif;
+	font-weight: 400;
+}
+
+
+select.form-control 
+{
+  -webkit-appearance: none;
+   -moz-appearance:    none;
+   appearance:         none;
+   background-image:url('../images/select_arrow.png');
+   background-repeat: no-repeat; 
+    background-position: right center;
+    background-size: 25px;
+}
+
+
+.modal-body .close {
+    line-height: .5;
+}
+
+#mobile-toogle-opner {
+    display: none;
 }
 
 header .heroesmeet_main_logo img
@@ -17,6 +41,11 @@ header .navbar-expand-lg .navbar-collapse
 	justify-content: flex-end;
 }
 
+header .navbar.navbar-expand-lg.navbar-light ul li a {
+	font-family: 'Montserrat', sans-serif;
+	font-weight: bold;
+}
+
 .carousel-inner img {
     width: 100%;
     height: 100%;
@@ -24,16 +53,28 @@ header .navbar-expand-lg .navbar-collapse
 
 .carousel.slide h3
 {
-font-family: 'Niconne', cursive;
-font-size: 60px;
+/*font-family: 'Niconne', cursive;*/
+font-family: 'Montserrat', sans-serif;
+font-size: 40px;
 margin: 0 0 20px 0;
+color: #212529;
+font-weight: bold;
+}
+
+.carousel.slide p
+{
+	color: #000;
+	margin: 0 0 24px 0;
+	font-size: 18px;
 }
 
 .section-title {
-    font-family: 'Niconne', cursive;
-    font-size: 45px;
+    /*font-family: 'Niconne', cursive;*/
+    font-family: 'Montserrat', sans-serif;
+    font-size: 40px;
     margin: 50px 0 20px;
     text-align: center;
+    font-weight: bold;
 }
 
 .btn.theme-color-btn.btn-primary:hover {
@@ -63,11 +104,28 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ea0164', end
 border: none;
 }
 
+.btn.theme-color-them-btn.btn-primary:hover
+{
+background:#fff;
+border: solid 1px #ccc;
+color:#000;
+}
+
 
 
 #header-slider .carousel-caption {
 bottom: 110px;
+background: rgba(255,255,255,0.80);
+padding-top: 40px;
+padding-bottom: 40px;
 }
+
+
+#header-slider .btn.theme-color-them-btn.btn-primary {
+    font-size: 20px;
+    width: 15%;
+}
+
 
 
 #security-tags {
@@ -82,6 +140,10 @@ bottom: 110px;
     padding: 20px 0;
 }
 
+#security-tags .secure-tags h3 {
+    font-size: 18px;
+    margin: 10px 0 0 0;
+}
 
 #steps-to-finding-your-soul-mate {
     text-align: center;
@@ -136,6 +198,11 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ea0164', end
 .timeline-nodes:nth-child(odd) p {
     text-align: right;
 }
+
+.timeline-nodes:nth-child(2) h3, .timeline-nodes:nth-child(2) p {
+    text-align: left;
+}
+
 .timeline-nodes:nth-child(odd) .timeline-date {
     text-align: left;
 }
@@ -254,6 +321,7 @@ display: none;
 {
 background:url('../images/why-heroesmeet-bg.png'); 
 background-size: 100%; 
+padding: 0 0 60px 0;
 }
 
 #why-heroesmeet h2.section-title
@@ -281,7 +349,6 @@ background-size: 100%;
 {
 	width: 100%;
 }
-
 
 
 #footer .footer-logo {
@@ -545,6 +612,209 @@ border-bottom: solid 1px #ccc;
 	width: 100%;
 }
 
+
+.sidenav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 999;
+  top: 0;
+  left: 0;
+  background: #ea0164; /* Old browsers */
+background: -moz-linear-gradient(left,  #ea0164 0%, #990462 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(left,  #ea0164 0%,#990462 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(to right,  #ea0164 0%,#990462 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ea0164', endColorstr='#990462',GradientType=1 ); /* IE6-9 */
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding: 10px 0 0 0;
+  text-align:center;
+
+}
+
+.sidenav .menu-logo
+{
+	width: 100%;
+	padding: 0 0 0 10px;
+}
+
+.sidenav .menu-logo img {
+    width: 70%;
+    float: left;
+}
+
+.sidenav a {
+padding: 5px 0 5px 20px;
+text-decoration: none;
+font-size: 18px;
+color:#fff;
+display: block;
+transition: 0.3s;
+font-family: 'Raleway', sans-serif;
+font-weight: bold;
+text-align: left;
+}
+
+.sidenav .navbar-nav {
+    width: 100%;
+    padding: 40px 0 40px 15px;
+}
+
+.sidenav a:hover{
+  color: #f1f1f1;
+}
+
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+
+#footer {
+    padding: 40px 0;
+}
+
+
+/* singup screen */
+
+#signup .heroesmeet_main_logo {
+    width: 30%;
+    margin: 60px auto 0;
+}
+
+#signup-screen {
+    padding: 5% 0 10%;
+}
+
+#signup-screen .get-started {
+    font-size: 50px;
+    font-weight: bold;
+    margin: 0 0 20px 0;
+}
+
+#signup-screen .facebook.btn.btn-primary {
+    background: #4a629e;
+    border: none;
+    border-radius: 50px;
+    padding: 0 20px;
+    line-height: 47px;
+    height: 50px;
+}
+
+
+#signup-screen .use-my-contact {
+    color: #920264;
+    font-size: 22px;
+    font-weight: bold;
+}
+
+
+
+#signup-screen .or {
+    margin: 25px 0;
+}
+
+
+#signup-screen .singup-policy-content {
+    font-size: 20px;
+}
+
+#signup-screen .singup-policy-content.thank-you {
+    margin: 0;
+    color: #920264;
+}
+
+#signup-screen .btn.theme-color-them-btn.btn-primary {
+font-size: 24px;
+padding: 5px 0 10px;
+width: 100%;
+margin: 20px 0 20px 0;
+}
+
+
+#signup-screen .otp {
+
+    text-align: center;
+    font-size: 18px;
+
+}
+
+
+#signup-screen .input-group.dob .form-group {
+    margin: 0 5px 0 0;
+    width: 31%;
+}
+
+#signup-screen .input-group.gender-select {
+    border: solid 1px #ccc;
+    border-radius: 10px;
+    padding: 10px 0;
+    margin: 0 0 10px 0;
+}
+
+#signup-screen .input-group.gender-select .input-group-text
+{
+    background: none;
+    border: none;
+
+}
+
+#signup-screen .input-group.gender-select h3 {
+    font-size: 20px;
+    margin: 0 0 0 0;
+}
+
+
+#signup-screen .drag-photos {
+    height: 100px;
+    border: dotted 2px #ccc;
+    border-radius: 20px;
+}
+
+#signup-screen .drag-photos .drag-photos-colum {
+height: 90px;
+background:#ccc;
+margin: 3px;
+border-radius: 20px;
+}
+
+#signup-screen .drag-photos .drag-photos-colum p {
+    text-align: center;
+    line-height: 90px;
+}
+
+
+#signup-screen .upload_images li {
+    display: inline-block;
+    width: 30%;
+}
+
+#signup-screen .upload_images li img
+{
+    width: 100%;
+}
+
+#signup-screen .upload_images p {
+    margin: 15px 0 15px 0;
+    text-align: center;
+}
+
+
+#signup-screen .uploaded_images .upload_images li {
+    border-radius: 15px;
+    overflow: hidden;
+}
+
+
+/* end singup Screen */
+
+
+
+
+
 /*small device style*/
 
 @media (max-width: 767px) {
@@ -587,7 +857,7 @@ border-bottom: solid 1px #ccc;
     right: 100%;
     width: 0;
     border-left: 0;
-    border-right: 10px solid var(--blue);
+    border-right: 10px solid #990462;
     border-top: 10px solid transparent;
     border-bottom: 10px solid transparent;
 }
@@ -597,7 +867,7 @@ border-bottom: solid 1px #ccc;
     top: 5%;
     right: 100%;
     width: 0;
-    border-right: 10px solid var(--blue);
+    border-right: 10px solid #990462;
     border-top: 10px solid transparent;
     border-bottom: 10px solid transparent;
 }
@@ -629,4 +899,70 @@ border-bottom: solid 1px #ccc;
 }
 }
 
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+
+@media screen and (max-width: 480px) {
+
+#topbar .menubar.col-md-9 {
+    display: none !important;
+}
+
+#header-slider .carousel-caption {
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.carousel.slide h3 {
+    font-size: 14px;
+    margin: 0 0 10px 0;
+}
+
+.carousel.slide p {
+    color: #000;
+    margin: 0 0 24px 0;
+    font-size: 8px;
+}
+
+.heroesmeet_main_logo {
+    width: 70%;
+    float: left;
+}
+
+#mobile-toogle-opner {
+    float: right;
+}
+
+#header-slider .carousel-caption {
+    bottom: 10px;
+}
+
+#security-tags .secure-tags { 
+margin: 0 0 20px 0;
+}
+
+#mobile-toogle-opner {
+    display: block;
+}
+
+#menu-footer {
+    width: 100%;
+}
+
+.sidenav #menu-footer .btn.theme-color-btn.btn-primary 
+{
+width: 46%;
+display: inline-block;
+margin: 12px 0 0 0;
+font-size: 15px;
+}
+
+#header-slider .btn.theme-color-them-btn.btn-primary {
+    font-size: 14px;
+    width: 40%;
+}
+
+}
 

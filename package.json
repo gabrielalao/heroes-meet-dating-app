@@ -1,6 +1,6 @@
 {
   "name": "heroes-meet",
-  "homepage": "http://heroesmeet.com/react/",
+  "homepage": "http://heroesmeet.com/",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
