@@ -36,11 +36,12 @@ class Dashboard extends Component {
       {/* Required meta tags */}
       <meta charSet="utf-8" />
       <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+      <meta name="description" content="Start meeting new people in your area! If you already have an account"></meta>
       <link rel="stylesheet" href={sty} />
       <link href={all} rel="stylesheet" /> 
       {/* Bootstrap CSS */}
       <link rel="stylesheet" href={bootstrapCss} />
-      <title>HeroesMeet</title>
+      <title>Heroes Meet - Find Your Mate</title>
       <header id="user-dashboard-header">
         <div className="container">
           <div className="row">
