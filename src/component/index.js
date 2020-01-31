@@ -16,6 +16,7 @@ import bottomSlider from "../assets/images/bottom-slider.png";
 import instagramFollowers from "../assets/images/instagram-followers.png";
 import loginLogo from "../assets/images/heroesmeet-login-logo.png"
 import menuLogo from "../assets/images/menu_logo.png"
+import favicon from "../assets/images/favicon.png"
 
 import all from '../assets/font-awsome/css/all.css';
 import sty from '../assets/css/style.css';
@@ -23,13 +24,23 @@ import bootstrapCss from '../assets/css/bootstrap.min.css';
 import Carousel from 'react-bootstrap/Carousel'
 import 'bootstrap/dist/css/bootstrap.min.css';
 import {withRouter} from 'react-router-dom';
-
+import MetaTags from 'react-meta-tags';
+import Favicon from 'react-favicon';
+import {openNav, closeNav} from '../assets/js/custom'
 
 class AppIndex extends Component {
   constructor(props) {
     super(props);
     this.state = {
     };
+  }
+
+  openNav() {
+    document.getElementById("mySidenav").style.width = "100%";
+  }
+
+  closeNav() {
+    document.getElementById("mySidenav").style.width = "0";
   }
 
   render() {
@@ -39,11 +50,17 @@ class AppIndex extends Component {
               <meta charSet="utf-8" />
               <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
               <meta name="description" content="Start meeting new people in your area! If you already have an account"></meta>
+              <MetaTags>
+                <title>Heroes Meet - Find Your Mate</title>
+                <meta name="description" content="Start meeting new people in your area! If you already have an account" />
+                <meta property="og:title" content="Heroes Meet - Find Your Mate" />
+                <meta property="og:image" content={favicon} />
+              </MetaTags>
+              <Favicon url={favicon}/>
               <link rel="stylesheet" href={sty} />
               <link href={all} rel="stylesheet" /> 
               {/* Bootstrap CSS */}
               <link rel="stylesheet" href={bootstrapCss} />
-              <title>Heroes Meet - Find Your Mate</title>
               <header id="topbar">
    <div className="container">
     <div className="row">
@@ -52,7 +69,7 @@ class AppIndex extends Component {
           <img src={heroesmeetLogo} />
         </div>
 
-        <span id="mobile-toogle-opner" style={{"font-size":30,"cursor":'pointer'}} onclick="openNav()">&#9776;</span>
+        <span id="mobile-toogle-opner" style={{"font-size":30,"cursor":'pointer'}} onclick={()=>this.openNav}>&#9776;</span>
 
       </div>
 
@@ -84,7 +101,7 @@ class AppIndex extends Component {
       </div>
 
       <div id="mySidenav" className="sidenav">
-        <a href="javascript:void(0)" className="closebtn" onclick="closeNav()">&times;</a>
+        <a href="javascript:void(0)" className="closebtn" onclick={()=>this.closeNav()}>&times;</a>
         <div className="menu-logo">
           <img src={menuLogo} alt="User one" />
         </div>
