@@ -47,7 +47,7 @@ class SignupStep1 extends Component {
               <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
               <meta name="description" content="Start meeting new people in your area! If you already have an account"></meta>
               <MetaTags>
-                    <title>Heroes Meet - Find Your Mate</title>
+                    <title>HeroesMeet - Find Your Mate</title>
                     <meta name="description" content="Start meeting new people in your area! If you already have an account" />
                     <meta property="og:title" content="Heroes Meet - Find Your Mate" />
                     <meta property="og:image" content={favicon} />
@@ -128,7 +128,7 @@ class SignupStep1 extends Component {
     <div class="row">
       <div class="col-md-12">
         <div class="copy-right">
-          <p> © 2020 HeroesMeet | All Rights Reserved | English (United Kingdom)</p>
+          <p> © 2020 HeroesMeet | All Rights Reserved </p>
         </div>
       </div>
     </div>

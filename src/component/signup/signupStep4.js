@@ -129,7 +129,7 @@ class SignupStep4 extends Component {
     <div className="row">
       <div className="col-md-12">
         <div className="copy-right">
-          <p> © 2020 HeroesMeet | All Rights Reserved | English (United Kingdom)</p>
+        <p> © 2020 HeroesMeet | All Rights Reserved </p>
         </div>
       </div>
     </div>
