@@ -18,6 +18,7 @@ import loginLogo from "../../assets/images/heroesmeet-login-logo.png"
 import uploadImage from "../../assets/images/upload_images_mannual.png"
 import facebookUpload from "../../assets/images/facebook_upload.png"
 import instagramUpload from "../../assets/images/instagram_upload.png"
+import favicon from "../../assets/images/favicon.png"
 
 import all from '../../assets/font-awsome/css/all.css';
 import sty from '../../assets/css/style.css';
@@ -26,6 +27,8 @@ import Carousel from 'react-bootstrap/Carousel'
 import 'bootstrap/dist/css/bootstrap.min.css';
 import {withRouter} from 'react-router-dom';
 import Dropzone from 'react-dropzone';
+import MetaTags from 'react-meta-tags';
+import Favicon from 'react-favicon';
 
 class SignupStep8 extends Component {
   constructor(props) {
@@ -57,11 +60,17 @@ class SignupStep8 extends Component {
               <meta charSet="utf-8" />
               <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
               <meta name="description" content="Start meeting new people in your area! If you already have an account"></meta>
+              <MetaTags>
+                    <title>Heroes Meet - Find Your Mate</title>
+                    <meta name="description" content="Start meeting new people in your area! If you already have an account" />
+                    <meta property="og:title" content="Heroes Meet - Find Your Mate" />
+                    <meta property="og:image" content={favicon} />
+                </MetaTags>
+                <Favicon url={favicon}/>
               <link rel="stylesheet" href={sty} />
               <link href={all} rel="stylesheet" /> 
               {/* Bootstrap CSS */}
               <link rel="stylesheet" href={bootstrapCss} />
-              <title>Heroes Meet - Find Your Mate</title>
               <header id="signup">
                 <div classNameName="container">
                     <div classNameName="row">

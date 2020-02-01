@@ -19,7 +19,9 @@ import userProfile2 from "../assets/images/user-profile_2.png";
 import userProfile3 from "../assets/images/user-profile_3.png";
 import findUser from "../assets/images/find-user.png";
 import heroesMeetLoginLogo from "../assets/images/heroesmeet-login-logo.png"
-
+import MetaTags from 'react-meta-tags';
+import Favicon from 'react-favicon';
+import favicon from "../assets/images/favicon.png"
 
 class Dashboard extends Component {
   constructor(props) {
@@ -37,11 +39,17 @@ class Dashboard extends Component {
       <meta charSet="utf-8" />
       <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
       <meta name="description" content="Start meeting new people in your area! If you already have an account"></meta>
+      <MetaTags>
+        <title>Heroes Meet - Find Your Mate</title>
+        <meta name="description" content="Start meeting new people in your area! If you already have an account" />
+        <meta property="og:title" content="Heroes Meet - Find Your Mate" />
+        <meta property="og:image" content={favicon} />
+      </MetaTags>
+      <Favicon url={favicon}/>
       <link rel="stylesheet" href={sty} />
       <link href={all} rel="stylesheet" /> 
       {/* Bootstrap CSS */}
       <link rel="stylesheet" href={bootstrapCss} />
-      <title>Heroes Meet - Find Your Mate</title>
       <header id="user-dashboard-header">
         <div className="container">
           <div className="row">
