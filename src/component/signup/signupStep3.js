@@ -74,7 +74,7 @@ class SignupStep3 extends Component {
         <p className="otp">Next, please enter the 4-digit code we just sent you </p>
 
         <div className="input-group mb-3">
-          <input type="text" className="form-control" placeholder="OTP" aria-label="Username" />
+          <input type="text" className="form-control" placeholder="Enter Code" aria-label="Username" />
         </div>
 
         <div className="text-center">
@@ -132,7 +132,7 @@ class SignupStep3 extends Component {
     <div className="row">
       <div className="col-md-12">
         <div className="copy-right">
-          <p> © 2020 Heroesmeet | All Rights Reserved | English (United Kingdom)</p>
+          <p> © 2020 HeroesMeet | All Rights Reserved | English (United Kingdom)</p>
         </div>
       </div>
     </div>

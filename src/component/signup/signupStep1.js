@@ -128,7 +128,7 @@ class SignupStep1 extends Component {
     <div class="row">
       <div class="col-md-12">
         <div class="copy-right">
-          <p> © 2020 Heroesmeet | All Rights Reserved | English (United Kingdom)</p>
+          <p> © 2020 HeroesMeet | All Rights Reserved | English (United Kingdom)</p>
         </div>
       </div>
     </div>

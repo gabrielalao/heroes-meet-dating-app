@@ -358,6 +358,7 @@ padding: 0 0 60px 0;
 
 .footer-social-icon {
     margin: 24px 0 0 0;
+    float: left;
 }
 
 .footer-social-icon ul {
@@ -367,6 +368,7 @@ padding: 0 0 60px 0;
 
 .footer-social-icon ul li {
     display: inline-block;
+    margin: 0 10px 0 0;
 }
 
 .footer-social-icon ul li a i {
