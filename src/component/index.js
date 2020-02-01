@@ -177,26 +177,26 @@ class AppIndex extends Component {
 <section id="security-tags">
   <div className="container">
     <div className="row">
-      <div className="col-6 col-md-3">
+      <div className="col-6 col-sm-3 col-md-3">
         <div className="secure-tags">
          <img src={verifiedLogo} alt="New York" />
          <h3>Verified Profiles</h3>
        </div>
 
      </div>
-     <div className="col-6 col-md-3">
+     <div className="col-6 col-sm-3 col-md-3">
       <div className="secure-tags">
        <img src={mostSecure} alt="New York" />
        <h3>Secure</h3>
      </div>
    </div>
-   <div className="col-6 col-md-3">
+   <div className="col-6 col-sm-3 col-md-3">
     <div className="secure-tags">
      <img src={privacyLogo} alt="New York" />
      <h3>100% Privacy</h3>
    </div>
  </div>
- <div className="col-6 col-md-3">
+ <div className="col-6 col-sm-3 col-md-3">
   <div className="secure-tags">
    <img src={smartMatching} alt="New York" />
    <h3>Smart-Matching</h3>
@@ -299,13 +299,13 @@ class AppIndex extends Component {
 
   <div className="container">
     <div className="row">
-      <div className="col-md-7">
+      <div className="col-6 col-md-7">
         <div className="footer-logo">
           <img src={heroesmeetLogo} alt="User one" />
         </div>
       </div>
 
-      <div className="col-md-4">
+      <div className="col-6 col-md-4">
         <div className="footer-social-icon">
           <ul>
             <li><a href="#"><i className="fab fa-instagram"></i></a></li>

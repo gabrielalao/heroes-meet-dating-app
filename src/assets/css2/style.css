@@ -19,7 +19,7 @@ select.form-control
    background-image:url('../images/select_arrow.png');
    background-repeat: no-repeat; 
     background-position: right center;
-    background-size: 25px;
+    background-size:15px;
 }
 
 
@@ -33,7 +33,9 @@ select.form-control
 
 header .heroesmeet_main_logo img
 {
-	width: 100%;
+    width: 70%;
+    float:left;
+    
 }
 
 header .navbar-expand-lg .navbar-collapse
@@ -53,7 +55,6 @@ header .navbar.navbar-expand-lg.navbar-light ul li a {
 
 .carousel.slide h3
 {
-/*font-family: 'Niconne', cursive;*/
 font-family: 'Montserrat', sans-serif;
 font-size: 40px;
 margin: 0 0 20px 0;
@@ -64,12 +65,11 @@ font-weight: bold;
 .carousel.slide p
 {
 	color: #000;
-	margin: 0 0 24px 0;
-	font-size: 18px;
+    margin: 0 0 10px 0;
+    font-size: 18px;
 }
 
 .section-title {
-    /*font-family: 'Niconne', cursive;*/
     font-family: 'Montserrat', sans-serif;
     font-size: 40px;
     margin: 50px 0 20px;
@@ -114,10 +114,9 @@ color:#000;
 
 
 #header-slider .carousel-caption {
-bottom: 110px;
+bottom: 40px;
 background: rgba(255,255,255,0.80);
-padding-top: 40px;
-padding-bottom: 40px;
+padding: 20px 0;
 }
 
 
@@ -138,10 +137,16 @@ padding-bottom: 40px;
     background:#fff;
     border-radius: 15px;
     padding: 20px 0;
+    height: 120px;
+}
+
+#security-tags .secure-tags img
+{
+    width: 30%;
 }
 
 #security-tags .secure-tags h3 {
-    font-size: 18px;
+    font-size: 14px;
     margin: 10px 0 0 0;
 }
 
@@ -354,7 +359,6 @@ padding: 0 0 60px 0;
 #footer .footer-logo {
     text-align: right;
 }
-
 
 .footer-social-icon {
     margin: 24px 0 0 0;
@@ -702,7 +706,7 @@ text-align: left;
     border: none;
     border-radius: 50px;
     padding: 0 20px;
-    line-height: 47px;
+    line-height: 50px;
     height: 50px;
 }
 
@@ -731,7 +735,7 @@ text-align: left;
 
 #signup-screen .btn.theme-color-them-btn.btn-primary {
 font-size: 24px;
-padding: 5px 0 10px;
+padding: 5px 0 5px;
 width: 100%;
 margin: 20px 0 20px 0;
 }
@@ -744,6 +748,12 @@ margin: 20px 0 20px 0;
 
 }
 
+
+.input-group.dob {
+
+    margin: 0 0 20px 0;
+
+}
 
 #signup-screen .input-group.dob .form-group {
     margin: 0 5px 0 0;
@@ -800,10 +810,14 @@ border-radius: 20px;
 }
 
 #signup-screen .upload_images p {
-    margin: 15px 0 15px 0;
+    margin: 0px 0 15px 0;
     text-align: center;
+    font-size: 14px;
 }
 
+ul.upload_images {
+    margin: 10px 0 0 0;
+}
 
 #signup-screen .uploaded_images .upload_images li {
     border-radius: 15px;
@@ -834,7 +848,7 @@ border-radius: 20px;
     top: 0;
     left: 4%;
     width: 0;
-    border-left: 2px dashed var(--blue);
+    border-left: 2px dashed #990462;
     height: 100%;
     z-index: 1;
     transform: translateX(-50%);
@@ -849,7 +863,6 @@ border-radius: 20px;
     position: absolute;
     left: 0%;
     top: 60px;
-    /*transform: translateX(-50%;);*/
 }
 .timeline-nodes:nth-child(odd) .timeline-content::after {
     content: "";
@@ -906,65 +919,101 @@ border-radius: 20px;
   .sidenav a {font-size: 18px;}
 }
 
+@media screen and (max-width: 768px) {
+    header .heroesmeet_main_logo img {width: 32%;}
+        .footer-main-nav {margin: 20px 0 15px 0;}
+        .footer-main-nav ul li {padding: 0px 10px; border: none;}
+        .footer-main-nav ul li a {font-size: 12px;}
+        .timeline h3 {font-size: 18px;}
+        .timeline-image {top: 25px;}
+        .timeline {padding: 0px 0;}
+        .section-title {font-size: 24px; margin: 0px 0 20px;}
+        #topbar .menubar.col-md-9 {display: none !important;}
+        #header-slider .carousel-caption {padding: 20px 0px;}
+        .carousel.slide h3 {font-size: 20px; margin: 0 0 10px 0;}
+        .carousel.slide p {color: #000; margin: 0 0 5px 0; font-size: 16px; padding: 0 40px;}
+        #steps-to-finding-your-soul-mate { padding: 0 25px;}
+        #why-heroesmeet {padding: 40px 0;}
+        #why-heroesmeet p {font-size: 14px;}
+        #mobile-toogle-opner {float: right;}
+        #header-slider .carousel-caption {bottom: 10px;}
+        #security-tags .secure-tags { margin: 0 0 20px 0;}
+        #mobile-toogle-opner {display: block;}
+        #menu-footer {width: 100%;}
+        .sidenav #menu-footer .btn.theme-color-btn.btn-primary {width: 46%; display: inline-block; margin: 12px 0 0 0; font-size: 15px;}
+        #header-slider .btn.theme-color-them-btn.btn-primary {font-size: 14px; width: 40%;}
+        #footer .footer-logo {text-align: center;}
+        #footer .footer-logo img {width: 100%;}
+        .footer-social-icon {margin: 10px auto 0;float: none;}
+        .copy-right {font-size: 14px;}
+        #signup {padding: 40px 0 0 0;}
+        #signup-screen {padding: 10% 0 0;}
+        #signup-screen .get-started {font-size: 20px;}
+        #signup .heroesmeet_main_logo {width: 60%; margin: 60px auto 0; float: none;}
+        }
+
+@media screen and (max-width: 640px) {
+header .heroesmeet_main_logo img {width: auto;}
+    .footer-main-nav {margin: 20px 0 15px 0;}
+    .footer-main-nav ul li {padding: 0px 10px; border: none;}
+    .footer-main-nav ul li a {font-size: 12px;}
+    .timeline h3 {font-size: 18px;}
+    .timeline-image {top: 25px;}
+    .timeline {padding: 0px 0;}
+    .section-title {font-size: 24px; margin: 0px 0 20px;}
+    #topbar .menubar.col-md-9 {display: none !important;}
+    #header-slider .carousel-caption {padding: 20px 0px;}
+    .carousel.slide h3 {font-size: 20px; margin: 0 0 10px 0;}
+    .carousel.slide p {color: #000; margin: 0 0 5px 0; font-size: 14px; padding: 0 40px;}
+    #steps-to-finding-your-soul-mate { padding: 0 25px;}
+    #why-heroesmeet {padding: 40px 0;}
+    #why-heroesmeet p {font-size: 14px;}
+    #mobile-toogle-opner {float: right;}
+    #header-slider .carousel-caption {bottom: 10px;}
+    #security-tags .secure-tags { margin: 0 0 20px 0;}
+    #mobile-toogle-opner {display: block;}
+    #menu-footer {width: 100%;}
+    .sidenav #menu-footer .btn.theme-color-btn.btn-primary {width: 46%; display: inline-block; margin: 12px 0 0 0; font-size: 15px;}
+    #header-slider .btn.theme-color-them-btn.btn-primary {font-size: 14px; width: 40%;}
+    #footer .footer-logo {text-align: center;}
+    #footer .footer-logo img {width: 100%;}
+    .footer-social-icon {margin: 10px auto 0;float: none;}
+    .copy-right {font-size: 14px;}
+    #signup {padding: 40px 0 0 0;}
+    #signup-screen {padding: 10% 0 0;}
+    #signup-screen .get-started {font-size: 20px;}
+    #signup .heroesmeet_main_logo {width: 60%; margin: 60px auto 0; float: none;}
+    }
+
 @media screen and (max-width: 480px) {
-
-#topbar .menubar.col-md-9 {
-    display: none !important;
-}
-
-#header-slider .carousel-caption {
-    padding-top: 20px;
-    padding-bottom: 20px;
-}
-
-.carousel.slide h3 {
-    font-size: 14px;
-    margin: 0 0 10px 0;
-}
-
-.carousel.slide p {
-    color: #000;
-    margin: 0 0 24px 0;
-    font-size: 8px;
-}
-
-.heroesmeet_main_logo {
-    width: 70%;
-    float: left;
-}
-
-#mobile-toogle-opner {
-    float: right;
-}
-
-#header-slider .carousel-caption {
-    bottom: 10px;
-}
-
-#security-tags .secure-tags { 
-margin: 0 0 20px 0;
-}
-
-#mobile-toogle-opner {
-    display: block;
-}
-
-#menu-footer {
-    width: 100%;
-}
-
-.sidenav #menu-footer .btn.theme-color-btn.btn-primary 
-{
-width: 46%;
-display: inline-block;
-margin: 12px 0 0 0;
-font-size: 15px;
-}
-
-#header-slider .btn.theme-color-them-btn.btn-primary {
-    font-size: 14px;
-    width: 40%;
-}
-
+.footer-main-nav {margin: 20px 0 15px 0;}
+.footer-main-nav ul li {padding: 0px 10px; border: none;}
+.footer-main-nav ul li a {font-size: 12px;}
+.timeline h3 {font-size: 18px;}
+.timeline-image {top: 25px;}
+.timeline {padding: 0px 0;}
+.section-title {font-size: 24px; margin: 0px 0 20px;}
+#topbar .menubar.col-md-9 {display: none !important;}
+#header-slider .carousel-caption {padding: 20px 0px;}
+.carousel.slide h3 {font-size: 14px; margin: 0 0 10px 0;}
+.carousel.slide p {color: #000; margin: 0 0 5px 0; font-size: 8px; padding: 0 40px;}
+#steps-to-finding-your-soul-mate { padding: 0 25px;}
+#why-heroesmeet {padding: 40px 0;}
+#why-heroesmeet p {font-size: 14px;}
+#mobile-toogle-opner {float: right;}
+#header-slider .carousel-caption {bottom: 10px;}
+#security-tags .secure-tags { margin: 0 0 20px 0;}
+#mobile-toogle-opner {display: block;}
+#menu-footer {width: 100%;}
+.sidenav #menu-footer .btn.theme-color-btn.btn-primary {width: 46%; display: inline-block; margin: 12px 0 0 0; font-size: 15px;}
+#header-slider .btn.theme-color-them-btn.btn-primary {font-size: 14px; width: 40%;}
+#footer .footer-logo {text-align: center;}
+#footer .footer-logo img {width: 100%;}
+.footer-social-icon {margin: 10px auto 0;float: none;}
+.copy-right {font-size: 14px;}
+#signup {padding: 40px 0 0 0;}
+#signup-screen {padding: 10% 0 0;}
+#signup-screen .get-started {font-size: 20px;}
+#signup .heroesmeet_main_logo {width: 60%; margin: 60px auto 0; float: none;}
 }
 
