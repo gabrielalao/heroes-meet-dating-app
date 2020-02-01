@@ -93,12 +93,12 @@ class SignupStep1 extends Component {
 <footer id="footer">
   <div class="container">
     <div class="row">
-      <div class="col-md-7">
+      <div class="col-6 col-md-7">
         <div class="footer-logo">
           <img src={heroesmeetLogo} alt="User one" />
         </div>
       </div>
-      <div class="col-md-4">
+      <div class="col-6 col-md-4">
         <div class="footer-social-icon">
           <ul>
             <li><a href="#"><i class="fab fa-instagram"></i></a></li>

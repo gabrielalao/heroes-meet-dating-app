@@ -26,7 +26,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import {withRouter} from 'react-router-dom';
 import MetaTags from 'react-meta-tags';
 import Favicon from 'react-favicon';
-import {openNav, closeNav} from '../assets/js/custom'
+// import {openNav, closeNav} from '../assets/js/custom'
 
 class AppIndex extends Component {
   constructor(props) {
@@ -69,7 +69,7 @@ class AppIndex extends Component {
           <a href="#"><img src={heroesmeetLogo} /></a>
         </div>
 
-        <span id="mobile-toogle-opner" style={{"font-size":30,"cursor":'pointer'}} onclick={()=>this.openNav}>&#9776;</span>
+        <span id="mobile-toogle-opner" style={{"font-size":30,"cursor":'pointer'}} onClick={()=>this.openNav()}>&#9776;</span>
 
       </div>
 
@@ -101,7 +101,7 @@ class AppIndex extends Component {
       </div>
 
       <div id="mySidenav" className="sidenav">
-        <a href="javascript:void(0)" className="closebtn" onclick={()=>this.closeNav()}>&times;</a>
+        <a href="javascript:void(0)" className="closebtn" onClick={()=>this.closeNav()}>&times;</a>
         <div className="menu-logo">
           <img src={menuLogo} alt="User one" />
         </div>
@@ -177,26 +177,26 @@ class AppIndex extends Component {
 <section id="security-tags">
   <div className="container">
     <div className="row">
-      <div className="col-6 col-md-3">
+      <div className="col-6 col-sm-3 col-md-3">
         <div className="secure-tags">
          <img src={verifiedLogo} alt="New York" />
          <h3>Verified Profiles</h3>
        </div>
 
      </div>
-     <div className="col-6 col-md-3">
+     <div className="col-6 col-sm-3 col-md-3">
       <div className="secure-tags">
        <img src={mostSecure} alt="New York" />
        <h3>Secure</h3>
      </div>
    </div>
-   <div className="col-6 col-md-3">
+   <div className="col-6 col-sm-3 col-md-3">
     <div className="secure-tags">
      <img src={privacyLogo} alt="New York" />
      <h3>100% Privacy</h3>
    </div>
  </div>
- <div className="col-6 col-md-3">
+ <div className="col-6 col-sm-3 col-md-3">
   <div className="secure-tags">
    <img src={smartMatching} alt="New York" />
    <h3>Smart-Matching</h3>
@@ -299,13 +299,13 @@ class AppIndex extends Component {
 
   <div className="container">
     <div className="row">
-      <div className="col-md-7">
+      <div className="col-6 col-md-7">
         <div className="footer-logo">
           <img src={heroesmeetLogo} alt="User one" />
         </div>
       </div>
 
-      <div className="col-md-4">
+      <div className="col-6 col-md-4">
         <div className="footer-social-icon">
           <ul>
             <li><a href="#"><i className="fab fa-instagram"></i></a></li>
