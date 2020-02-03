@@ -13,6 +13,9 @@ import signupStep6 from './component/signup/signupStep6';
 import signupStep7 from './component/signup/signupStep7';
 import signupStep8 from './component/signup/signupStep8';
 import signupStep9 from './component/signup/signupStep9';
+import getStarted from './component/login/getStarted';
+import loginUser from './component/login/loginUser';
+import userPassword from './component/login/userPassword';
 
 function App() {
   return (
@@ -31,6 +34,10 @@ function App() {
     <Route path="/signupStepEight" component={signupStep8} />
     <Route path="/signupStepNine" component={signupStep9} />
     <Route path="/dashboard" component={Dashboard} />
+    <Route path="/getStarted" component={getStarted} />
+    <Route path="/loginUser" component={loginUser} />
+    <Route path="/UserLoginPassword" component={userPassword} />
+
      
      </Switch>
     </div>

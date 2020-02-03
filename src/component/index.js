@@ -164,7 +164,7 @@ class AppIndex extends Component {
           <p>Start meeting new people in your area! If you already have an account, 
           <br /> sign in to use HeroesMeet on the web.</p>
           <div className="slider-btn">
-            <a href="#" className="btn theme-color-them-btn btn-primary" data-toggle="modal" data-target="#login-modal">LOGIN</a>
+            <a onClick={()=>this.props.history.push('/getStarted')} className="btn theme-color-them-btn btn-primary" data-toggle="modal" data-target="#login-modal">LOGIN</a>
             <a onClick={()=>this.props.history.push('/signupStepOne')} className="btn theme-color-them-btn btn-primary" data-toggle="modal" data-target="#signup-modal">SIGN UP</a>
           </div>
         </div>   
