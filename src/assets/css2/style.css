@@ -10,6 +10,9 @@ body
 	font-weight: 400;
 }
 
+a{
+    cursor: pointer;
+}
 
 select.form-control 
 {
@@ -509,6 +512,7 @@ border-bottom: solid 1px #ccc;
 display: inline-block;
 width: 33%;
 text-align: center;
+cursor: pointer;
 }
 
 #user-message-box .user-profile-tag .user-name {
@@ -521,6 +525,7 @@ text-align: center;
 	font-weight:bold;
     font-size: 20px;
     text-align: left;
+    cursor: pointer;
 }
 
 
@@ -838,14 +843,57 @@ ul.upload_images {
 
 /* user dashboard */
 
+.find-you-matches-here {
+    padding: 0 20px;
+}
+
+
 .find-you-matches-here h3 {
     font-size: 18px;
     padding: 20px 15px;
 }
 
 
-/* end user dashboard */
 
+/* end user dashboard */
+ 
+
+/* Account Setting Page css */
+
+
+.AccountSettingNav {
+    padding: 25px;
+}
+
+
+.AccountSettingNav ul {
+
+    padding: 0;
+
+}
+
+.AccountSettingNav ul li {
+    display: flex;
+    padding: 12px 30px;
+    margin: 0 0 10px 0;
+}
+
+.AccountSettingNav ul li a{
+    color: #000;
+}
+
+.AccountSettingNav ul li.activeSpotlight {
+    background: #f9cde0;
+    border-radius: 50px;
+}
+
+.AccountSettingNav ul li.activeManageBoost
+{
+    background: #eefffb;
+    border-radius: 50px;
+}
+
+/* End Account Setting Page Css */
 
 /*small device style*/
 

@@ -3,7 +3,6 @@ import React from 'react';
 import './App.css';
 import { Route, BrowserRouter as Router, Switch } from 'react-router-dom'
 import AppIndex from './component/index';
-import Dashboard from './component/Dashboard';
 import signupStep1 from './component/signup/signupStep1';
 import signupStep2 from './component/signup/signupStep2';
 import signupStep3 from './component/signup/signupStep3';
@@ -16,6 +15,9 @@ import signupStep9 from './component/signup/signupStep9';
 import getStarted from './component/login/getStarted';
 import loginUser from './component/login/loginUser';
 import userPassword from './component/login/userPassword';
+import Dashboard from './component/Dashboard';
+import userAcccountSettings from './component/userAcccountSettings';
+
 
 function App() {
   return (
@@ -33,10 +35,11 @@ function App() {
     <Route path="/signupStepSeven" component={signupStep7} />
     <Route path="/signupStepEight" component={signupStep8} />
     <Route path="/signupStepNine" component={signupStep9} />
-    <Route path="/dashboard" component={Dashboard} />
     <Route path="/getStarted" component={getStarted} />
     <Route path="/loginUser" component={loginUser} />
     <Route path="/UserLoginPassword" component={userPassword} />
+    <Route path="/dashboard" component={Dashboard} />
+    <Route path="/userAccountSetting" component={userAcccountSettings} />
 
      
      </Switch>

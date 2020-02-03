@@ -25,17 +25,12 @@ import Favicon from 'react-favicon';
 import favicon from "../assets/images/favicon.png"
 import findmatchplaceholder from "../assets/images/placeholder.jpg"
 
-class Dashboard extends Component {
+class userAcccountSettings extends Component {
   constructor(props) {
     super(props);
     this.state = {
       womenClicked: false
     };
-
-    this.state={
-      accountSetting: true
-    };
-
   }
 
 
@@ -72,7 +67,7 @@ class Dashboard extends Component {
             <div className="row">
               <div className="col-md-3">
                 <div className="heroesmeet_main_logo">
-                <a onClick={()=>this.props.history.push('/')}><img src={heroesmeetLogo} /></a>
+                  <a href="#"><img src={heroesmeetLogo} /></a>
                 </div>
                 <span id="mobile-toogle-opner" style={{ "font-size": 30, "cursor": 'pointer' }} onClick={() => this.openNav()}>&#9776;</span>
               </div>
@@ -144,31 +139,16 @@ class Dashboard extends Component {
                   <div className="col-md-12">
                     <div className="user-profile-tag">
                       <div className="user-imgae">
-                       <a onClick={() => this.setState({ shown: !this.state.shown })}> <img src={userProfile} /> </a>
+                        <img src={userProfile} />
                       </div>
                       <div className="user-name">
-                      <a onClick={() => this.setState({ shown: !this.state.shown })}>  <h3>John Samith</h3></a>
+                        <h3>John Samith</h3>
                       </div>
                     </div>
                   </div>
                 </div>
-                <div className="row">
-                  <div className="col-md-12">
-                {this.state.shown ?
-                <div className="user-message-body-colum">
-                  <div className="AccountSettingNav">
-                      <ul>
-                        <li className="activeSpotlight"> <a href="#">Activate Spotlight </a></li>
-                        <li className="activeManageBoost"> <a href="#">Manage your Boost</a></li>
-                        <li> <a href="#">Edit profile</a></li>
-                        <li> <a href="#">Settings</a></li>
-                        <li> <a href="#">Contact & FAQs</a></li>
-                        <li> <a href="#">Logout</a></li>
-                      </ul>
-                    </div>
-                </div> :
-                <div class="user-message-body-colum">
-                   <div className="row">
+
+              <div className="row">
                 <div className="col-md-12">
                     <div className="find-you-matches-here">
                       <img src={findmatchplaceholder} />
@@ -177,9 +157,6 @@ Start discovering people to get matches. </h3>
                     </div>
                 </div>
               </div>
-                </div>}
-                  </div>
-                </div>
 
               </div>
               {this.state.womenClicked ?
@@ -226,7 +203,7 @@ Start discovering people to get matches. </h3>
             <div className="row">
               <div className="col-md-7">
                 <div className="footer-logo">
-                <a onClick={()=>this.props.history.push('/')}>  <img src={heroesmeetLogo} alt="User one" /></a>
+                  <img src={heroesmeetLogo} alt="User one" />
                 </div>
               </div>
               <div className="col-md-4">
@@ -390,4 +367,4 @@ Start discovering people to get matches. </h3>
   }
 }
 
-export default Dashboard;
+export default userAcccountSettings;

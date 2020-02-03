@@ -62,7 +62,7 @@ class SignupStep1 extends Component {
                     <div className="row">
                         <div className="col-md-12">
                             <div className="heroesmeet_main_logo">
-                                <img src={heroesmeetLogo} />
+                            <a onClick={()=>this.props.history.push('/')}><img src={heroesmeetLogo} /></a>
                             </div>
                         </div> 
                     </div>
@@ -95,7 +95,7 @@ class SignupStep1 extends Component {
     <div class="row">
       <div class="col-6 col-md-7">
         <div class="footer-logo">
-          <img src={heroesmeetLogo} alt="User one" />
+        <a onClick={()=>this.props.history.push('/')}><img src={heroesmeetLogo} alt="User one" /></a>
         </div>
       </div>
       <div class="col-6 col-md-4">

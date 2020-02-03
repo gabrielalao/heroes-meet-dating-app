@@ -62,7 +62,7 @@ class getStarted extends Component {
                     <div className="row">
                         <div className="col-md-12">
                             <div className="heroesmeet_main_logo">
-                                <img src={heroesmeetLogo} />
+                            <a onClick={()=>this.props.history.push('/')}><img src={heroesmeetLogo} /></a>
                             </div>
                         </div> 
                     </div>
@@ -74,7 +74,7 @@ class getStarted extends Component {
   <div class="container">
     <div class="row">
       <div class="text-center col-md-12">
-        <h2 class="get-started">Welcome! How do you want to <br/> get started? </h2>
+        <h2 class="get-started">Welcome back!<br/>  How do you want to continue? </h2>
         <a href="#" class="facebook btn btn-primary">Use Facebook</a>
       </div>
       <div class="col-md-12 text-center">
@@ -95,7 +95,7 @@ class getStarted extends Component {
     <div class="row">
       <div class="col-6 col-md-7">
         <div class="footer-logo">
-          <img src={heroesmeetLogo} alt="User one" />
+        <a onClick={()=>this.props.history.push('/')}> <img src={heroesmeetLogo} alt="User one" /> </a>
         </div>
       </div>
       <div class="col-6 col-md-4">

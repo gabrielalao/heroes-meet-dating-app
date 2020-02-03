@@ -26,7 +26,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import {withRouter} from 'react-router-dom';
 import MetaTags from 'react-meta-tags';
 import Favicon from 'react-favicon';
-// import {openNav, closeNav} from '../assets/js/custom'
+
 
 class AppIndex extends Component {
   constructor(props) {
@@ -66,7 +66,10 @@ class AppIndex extends Component {
     <div className="row">
       <div className="col-md-3">
         <div className="heroesmeet_main_logo">
-          <a href="#"><img src={heroesmeetLogo} /></a>
+          <a onClick={()=>this.props.history.push('/')}><img src={heroesmeetLogo} /></a>
+
+          {/* onClick={()=>this.props.history.push('/getStarted')} */}
+
         </div>
 
         <span id="mobile-toogle-opner" style={{"font-size":30,"cursor":'pointer'}} onClick={()=>this.openNav()}>&#9776;</span>
@@ -272,7 +275,7 @@ class AppIndex extends Component {
  <div className="container">
   <div className="row">
     <div className="col-md-12">
-      <img src={bottomSlider} alt="User one" />
+    <a onClick={()=>this.props.history.push('/')}>  <img src={bottomSlider} alt="User one" /></a>
     </div>
   </div>
 </div>
