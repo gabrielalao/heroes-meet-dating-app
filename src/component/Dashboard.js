@@ -196,14 +196,8 @@ Start discovering people to get matches. </h3>
                 <div class="col-md-8 user-message-body-colum">
                   <div class="row">
                     <div class="col-md-12">
-
-                      <h3>Choose a made that fits what you’re looking for!</h3>
-
-
                       <h2>Let’s get HeroesMeet</h2>
-
                       <p>And who are you interested in?</p>
-
                       <button type="button" class="col-md-12 btn theme-color-them-btn btn-primary">Men</button>
                     </div>
                     <div class="col-md-12">
