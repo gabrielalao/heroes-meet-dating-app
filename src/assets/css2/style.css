@@ -640,12 +640,17 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ea0164', end
 
 .sidenav .menu-logo
 {
-	width: 100%;
-	padding: 0 0 0 10px;
+width: 60%;
+padding: 0 0 0 10px;
+background:#fff;
+margin: 0 20px;
+float: left;
+border-radius: 10px;
+
 }
 
 .sidenav .menu-logo img {
-    width: 70%;
+    width: 100%;
     float: left;
 }
 
@@ -1005,7 +1010,7 @@ header .heroesmeet_main_logo img {width: auto;}
 #security-tags .secure-tags { margin: 0 0 20px 0;}
 #mobile-toogle-opner {display: block;}
 #menu-footer {width: 100%;}
-.sidenav #menu-footer .btn.theme-color-btn.btn-primary {width: 46%; display: inline-block; margin: 12px 0 0 0; font-size: 15px;}
+.sidenav #menu-footer .btn.theme-color-btn.btn-primary {width: 46%; display: inline-block; margin: 12px 0 0 15px; font-size: 15px;}
 #header-slider .btn.theme-color-them-btn.btn-primary {font-size: 14px; width: 40%;}
 #footer .footer-logo {text-align: center;}
 #footer .footer-logo img {width: 100%;}
