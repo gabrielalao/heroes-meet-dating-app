@@ -23,7 +23,9 @@ import menuLogo from "../assets/images/menu_logo.png";
 import MetaTags from 'react-meta-tags';
 import Favicon from 'react-favicon';
 import favicon from "../assets/images/favicon.png"
-import findmatchplaceholder from "../assets/images/placeholder.jpg"
+import findmatchplaceholder from "../assets/images/placeholder.jpg";
+import userPhotosGallery from "../assets/images/team-1.png";
+
 
 class Dashboard extends Component {
   constructor(props) {
@@ -182,8 +184,36 @@ Start discovering people to get matches. </h3>
                 </div>
 
               </div>
-              {this.state.womenClicked ?
+              {this.state.shown ?
+            <div className="col-md-8 userDashboardSetting user-message-body-colum">
+              <div className="row">
+                <div className="col-md-12">
+                    <h1 className="userDashboardTitle"> Date profile </h1>
+                </div>
+              </div>
+
+                <div className="row">
+                    <div className="col-md-12">
+                        <div className="userPhotosGallery">
+                            <ul>
+                              <li> <a href="#"> <img src={userPhotosGallery} /> </a> </li>
+                              <li> <a href="#"> <img src={userPhotosGallery} /> </a> </li>
+                              <li> <a href="#"> <img src={userPhotosGallery} /> </a> </li>
+                              <li> <a href="#"> <img src={userPhotosGallery} /> </a> </li>
+                            </ul>
+                        </div>
+                      </div>
+                  </div>
+
+                  <div className="row">
+                    <div className="col-md-12">
+                          
+                      </div>
+                  </div>
+
+            </div>:
                 <div className="col-md-8 user-message-body-colum">
+                {this.state.womenClicked ?
                   <div className="row">
                     <div className="col-md-12">
                       <div className="find-heroes">
@@ -191,25 +221,25 @@ Start discovering people to get matches. </h3>
                         <img src={findUser} />
                       </div>
                     </div>
-                  </div>
-                </div> :
-                <div class="col-md-8 user-message-body-colum">
+                  </div> :
                   <div class="row">
-                    <div class="col-md-12">
-                      <h2>Let’s get HeroesMeet</h2>
-                      <p>And who are you interested in?</p>
-                      <button type="button" class="col-md-12 btn theme-color-them-btn btn-primary">Men</button>
-                    </div>
-                    <div class="col-md-12">
-
-                      <button type="button" onClick={() => this.setState({ womenClicked: true })}
-                        class="col-md-12 btn theme-color-them-btn btn-primary">Women</button>
-                    </div>
-                    <div class="col-md-12">
-                      <button type="button" class="col-md-12 btn theme-color-them-btn btn-primary">Everyone</button>
-
-                    </div>
+                    
+                  <div class="col-md-12">
+                    <h2>Let’s get HeroesMeet</h2>
+                    <p>And who are you interested in?</p>
+                    <button type="button" class="col-md-12 btn theme-color-them-btn btn-primary">Men</button>
                   </div>
+                  <div class="col-md-12">
+
+                    <button type="button" onClick={() => this.setState({ womenClicked: true })}
+                      class="col-md-12 btn theme-color-them-btn btn-primary">Women</button>
+                  </div>
+                  <div class="col-md-12">
+                    <button type="button" class="col-md-12 btn theme-color-them-btn btn-primary">Everyone</button>
+
+                  </div>
+                </div>}
+
                 </div>}
 
             </div>

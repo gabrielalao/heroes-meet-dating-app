@@ -893,6 +893,19 @@ ul.upload_images {
     border-radius: 50px;
 }
 
+.userPhotosGallery ul li {
+    display: inline-block;
+    width: 35%;
+    margin: 10px;
+    border-radius: 10px;
+    overflow: hidden;
+    border: solid 2px#ccc;
+}
+
+.userPhotosGallery ul li img {
+    width: 100%;
+}
+
 /* End Account Setting Page Css */
 
 /*small device style*/
