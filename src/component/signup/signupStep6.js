@@ -8,10 +8,77 @@ class SignupStep6 extends Component {
   constructor(props) {
     super(props);
     this.state = {
+      date_day:'',
+      date_mth:'',
+      date_year:'',
+      selectDay:false,
+      selectMonth:false,
+      // birthday: new Date()
     };
 
     const year = (new Date()).getFullYear();
     this.years = Array.from(new Array(50), (val, index) => year - index);
+  }
+
+  updateDay(evt) {
+    this.setState({
+      date_day: evt.target.value
+    },()=>{
+      this.postUpdate()
+    });
+  }
+
+  updateMonth(evt) {
+    this.setState({
+      date_mth: evt.target.value
+    },()=>{
+      this.postUpdate()
+    });
+  }
+
+  updateYear(evt) {
+    this.setState({
+      date_year: evt.target.value
+    },()=>{
+      this.postUpdate()
+    });
+  }
+
+  postUpdate(){
+    let newDate = new Date(this.state.date_year, this.state.date_mth, this.state.date_day);
+    this.setState({ birthday : newDate });
+  }
+
+  submit(){
+    // // Get the existing data
+    var existing = window.localStorage.getItem('signupData');
+
+    // If no existing data, create an array
+    // Otherwise, convert the localStorage string to an array
+    existing = existing ? JSON.parse(existing) : {};
+
+    // Add new data to localStorage Array
+    existing['birthday'] = this.state.birthday;
+
+    // Save back to localStorage
+    window.localStorage.setItem('signupData', JSON.stringify(existing));
+
+
+
+    // let retrievedObject = window.localStorage.getItem('signupData');
+
+    // console.log('retrievedObject: ', JSON.parse(window.localStorage.getItem('signupData')).birthday, this.state.date_day);
+
+    if(this.state.date_day == ''){
+      alert('Please enter your birth day')
+    }else if(this.state.date_mth == ''){
+      alert('Please enter your birth month')
+    }else if(this.state.date_year == ''){
+      alert('Please enter your birth year')
+    }else{
+      // console.log('inside else ***** ')
+      this.props.history.push('signupStepSeven')
+    }
   }
 
   render() {
@@ -27,7 +94,7 @@ class SignupStep6 extends Component {
                 <p className="otp">Hey John! When’s your birthday?</p>
                 <div className="input-group dob">
                   <div className="form-group">
-                    <select className="form-control" id="dob_month">
+                    <select className="form-control" id="dob_month" onChange={(e)=>this.updateDay(e)}>
                       <option>Month</option>
                       <option>1</option>
                       <option>2</option>
@@ -45,7 +112,7 @@ class SignupStep6 extends Component {
                   </div>
 
                   <div className="form-group">
-                    <select className="form-control" id="dob_day">
+                    <select className="form-control" id="dob_day" onChange={(e)=>this.updateMonth(e)}>
                       <option>Day</option>
                       <option>1</option>
                       <option>2</option>
@@ -81,7 +148,7 @@ class SignupStep6 extends Component {
                   </div>
 
                   <div className="form-group">
-                    <select className="form-control" id="dob_year">
+                    <select className="form-control" id="dob_year" onChange={(e)=>this.updateYear(e)}>
                       <option>Year</option>
                       {
                         this.years.map((year, index) => {
@@ -95,7 +162,7 @@ class SignupStep6 extends Component {
                 <p className="text-center">You must be at 18 years old to use HeroesMeet</p>
 
                 <div className="text-center">
-                  <a onClick={() => this.props.history.push('/signupStepSeven')} className="btn theme-color-them-btn btn-primary">Continue</a>
+                  <a onClick={() => this.submit()} className="btn theme-color-them-btn btn-primary">Continue</a>
                 </div>
 
                 <div className="col-md-12 text-center">

@@ -18,10 +18,57 @@ class SignupStep8 extends Component {
     this.state = {
       files: []
     };
+    console.log('localstorage ****** ',JSON.parse(window.localStorage.getItem('signupData')))
   }
 
-  setGender(event) {
-    console.log(event.target.value);
+  createUser(event){
+    event.preventDefault();
+
+    let reqObj = JSON.parse(window.localStorage.getItem('signupData'));
+
+    const url = 'https://secure-earth-47635.herokuapp.com/users/signup';
+
+    if(this.state.files.length < 6){
+      alert('Please add atleast 6 pictures')
+    }else{
+      fetch(url, {
+        method: 'POST',
+        headers: {
+          'Access-Control-Allow-Origin':'*',
+          'Accept': 'application/json',
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify({
+          "full_name": reqObj.name,
+          "dob": reqObj.birthday,
+          "phoneNum": reqObj.phoneNum,
+          "password": reqObj.password,
+          "verified": 0,
+          "gender": reqObj.gender,
+          "category": reqObj.category
+        })
+      })
+      .then(res => res.json())
+      .then(
+        (result) => {
+          console.log('result ******* ',result)
+          if(result.statusCode == 200){
+            window.localStorage.setItem('userData',JSON.stringify(result.data))
+            this.props.history.push('/dashboard')
+            alert(result.message)
+          }else{
+            alert(result.message)
+          }
+          
+        },
+        // Note: it's important to handle errors here
+        // instead of a catch() block so that we don't swallow
+        // exceptions from actual bugs in components.
+        (error) => {
+          console.log(error)
+        }
+      )
+    }
   }
 
   render() {
@@ -74,7 +121,7 @@ class SignupStep8 extends Component {
                     <li><a href="#"> <img src={uploadImage} alt="User one" /> </a></li>
                   </ul>
                   <div className="text-center">
-                    <a onClick={() => this.props.history.push('/dashboard')} className="btn theme-color-them-btn btn-primary">Continue</a>
+                    <a onClick={(e) => this.createUser(e)} className="btn theme-color-them-btn btn-primary">Continue</a>
                   </div>
                 </div>
               </div>
