@@ -30,7 +30,26 @@ class UserLogin extends Component {
   constructor(props) {
     super(props);
     this.state = {
+      inputValue:''
     };
+  }
+
+  submit(){
+    // console.log('retrievedObject: ', JSON.parse(retrievedObject).otp, this.state.inputValue);
+
+    if(this.state.inputValue == '' && !this.state.inputValue.trim()){
+      alert('Please enter your phone number')
+    }else{
+      this.props.history.push('/UserLoginPassword')
+      let item = {phoneNum:this.state.inputValue};
+      window.localStorage.setItem('loginData',JSON.stringify(item))
+    }
+  }
+
+  updateInputValue(evt) {
+    this.setState({
+      inputValue: evt.target.value
+    });
   }
 
   render() {
@@ -74,11 +93,11 @@ class UserLogin extends Component {
         <p className="otp">Please enter your mobile number</p>
 
         <div className="input-group mb-3">
-          <input type="tel" className="form-control" placeholder="Mobile Number" aria-label="Username" name="phone" pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}" required />
+          <input type="tel" className="form-control" value={this.state.inputValue} onChange={(e)=>this.updateInputValue(e)}  placeholder="Mobile Number" aria-label="Username" name="phone" pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}" required />
         </div>
 
         <div className="text-center">
-          <a onClick={()=>this.props.history.push('/UserLoginPassword')} href="" className="btn theme-color-them-btn btn-primary">Continue</a>
+          <a onClick={(e)=>this.submit(e)} href="" className="btn theme-color-them-btn btn-primary">Continue</a>
         </div>
 
          <div className="col-md-12 text-center">

@@ -30,7 +30,55 @@ class UserLoginPassword extends Component {
   constructor(props) {
     super(props);
     this.state = {
+      inputValue: ''
     };
+  }
+
+  updateInputValue(evt) {
+    this.setState({
+      inputValue: evt.target.value
+    });
+  }
+
+  submit(event){
+    event.preventDefault();
+    let reqObj = JSON.parse(window.localStorage.getItem('loginData'));
+    const url = 'https://secure-earth-47635.herokuapp.com/users/login';
+
+    if(this.state.inputValue == '' && !this.state.inputValue.trim()){
+      alert('Please enter your password')
+    }else{
+      fetch(url, {
+        method: 'POST',
+        headers: {
+          'Access-Control-Allow-Origin':'*',
+          'Accept': 'application/json',
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify({
+          "phoneNum": reqObj.phoneNum,
+          "password": this.state.inputValue
+        })
+      })
+      .then(res => res.json())
+      .then(
+        (result) => {
+          console.log('result ******* ',result)
+          if(result.statusCode == 200){
+            this.props.history.push('/dashboard')
+          }else{
+            alert(result.message)
+          }
+          
+        },
+        // Note: it's important to handle errors here
+        // instead of a catch() block so that we don't swallow
+        // exceptions from actual bugs in components.
+        (error) => {
+          console.log(error)
+        }
+      )
+    }
   }
 
   render() {
@@ -74,11 +122,11 @@ class UserLoginPassword extends Component {
         <p className="otp">Next, please enter the 4-digit code we just sent you </p>
 
         <div className="input-group mb-3">
-          <input type="password" className="form-control" placeholder="Enter Password" aria-label="password" />
+          <input type="password" className="form-control" placeholder="Enter Password" value={this.state.inputValue} onChange={(e)=>this.updateInputValue(e)} aria-label="password" />
         </div>
 
         <div className="text-center">
-          <a onClick={()=>this.props.history.push('/dashboard')} href="#" className="btn theme-color-them-btn btn-primary">Continue</a>
+          <a onClick={(e)=>this.submit(e)} href="#" className="btn theme-color-them-btn btn-primary">Continue</a>
         </div>
 
          <div className="col-md-12 text-center">
