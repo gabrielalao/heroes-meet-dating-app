@@ -2,30 +2,16 @@ import React, { Component } from 'react';
 
 import verifiedLogo from '../assets/images/100-Verified.jpg';
 import slider_banner from '../assets/images/slider-banenr.jpg';
-import heroesmeetLogo from '../assets/images/heroesmeet-logo.jpg';
 import mostSecure from "../assets/images/most-secure.jpg";
 import privacyLogo from "../assets/images/100-Privacy.jpg";
 import smartMatching from "../assets/images/Smart-Matching.jpg"
-
-import team1 from '../assets/images/team-1.png';
-import team2 from '../assets/images/team-2.png';
-import team3 from '../assets/images/team-3.png';
-import zoom from "../assets/images/zoom-plus.png";
 import createProfile from "../assets/images/create-profile.png";
 import bottomSlider from "../assets/images/bottom-slider.png";
 import instagramFollowers from "../assets/images/instagram-followers.png";
-import loginLogo from "../assets/images/heroesmeet-login-logo.png"
-import menuLogo from "../assets/images/menu_logo.png"
-import favicon from "../assets/images/favicon.png"
-
-import all from '../assets/font-awsome/css/all.css';
-import sty from '../assets/css/style.css';
-import bootstrapCss from '../assets/css/bootstrap.min.css';
-import Carousel from 'react-bootstrap/Carousel'
 import 'bootstrap/dist/css/bootstrap.min.css';
 import {withRouter} from 'react-router-dom';
-import MetaTags from 'react-meta-tags';
-import Favicon from 'react-favicon';
+import MainHeader from './common/MainHeader';
+import Footer from './common/footer';
 
 
 class AppIndex extends Component {
@@ -46,114 +32,8 @@ class AppIndex extends Component {
   render() {
     return (
             <div>
-              {/* Required meta tags */}
-              <meta charSet="utf-8" />
-              <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-              <meta name="description" content="Start meeting new people in your area! If you already have an account"></meta>
-              <MetaTags>
-                <title>HeroesMeet - Find Your Mate</title>
-                <meta name="description" content="Start meeting new people in your area! If you already have an account" />
-                <meta property="og:title" content="HeroesMeet - Find Your Mate" />
-                <meta property="og:image" content={favicon} />
-              </MetaTags>
-              <Favicon url={favicon}/>
-              <link rel="stylesheet" href={sty} />
-              <link href={all} rel="stylesheet" /> 
-              {/* Bootstrap CSS */}
-              <link rel="stylesheet" href={bootstrapCss} />
-              <header id="topbar">
-   <div className="container">
-    <div className="row">
-      <div className="col-md-3">
-        <div className="heroesmeet_main_logo">
-          <a onClick={()=>this.props.history.push('/')}><img src={heroesmeetLogo} /></a>
-
-          {/* onClick={()=>this.props.history.push('/getStarted')} */}
-
-        </div>
-
-        <span id="mobile-toogle-opner" style={{"font-size":30,"cursor":'pointer'}} onClick={()=>this.openNav()}>&#9776;</span>
-
-      </div>
-
-      <div className="menubar col-md-9">
-        <nav className="navbar navbar-expand-lg navbar-light">  
-          <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#site-main-bar" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span className="navbar-toggler-icon"></span>
-          </button>
-
-          <div className="collapse navbar-collapse" id="site-main-bar">
-            <ul className="navbar-nav">
-              <li className="nav-item active">
-                <a className="nav-link" href="#">GUIDELINES <span className="sr-only">(current)</span></a>
-              </li>
-              <li className="nav-item">
-                <a className="nav-link" href="#">STORIES</a>
-              </li>
-
-              <li className="nav-item">
-                <a className="nav-link" href="#">ABOUT US</a>
-              </li>
-
-              <li className="nav-item">
-                <a className="nav-link" href="#">CONTACT</a>
-              </li>
-            </ul>
-          </div>
-        </nav>
-      </div>
-
-      <div id="mySidenav" className="sidenav">
-        <a href="javascript:void(0)" className="closebtn" onClick={()=>this.closeNav()}>&times;</a>
-        <div className="menu-logo">
-          <img src={menuLogo} alt="User one" />
-        </div>
-        <ul className="navbar-nav">
-          <li className="nav-item active">
-            <a className="nav-link" href="#">GUIDELINES <span className="sr-only">(current)</span></a>
-          </li>
-          <li className="nav-item">
-            <a className="nav-link" href="#">STORIES</a>
-          </li>
-
-          <li className="nav-item">
-            <a className="nav-link" href="#">ABOUT US</a>
-          </li>
-
-          <li className="nav-item">
-            <a className="nav-link" href="#">CONTACT</a>
-          </li>
-        </ul>
-
-        <footer id="menu-footer">
-          <div className="row">
-            <div className="col-md-12">
-
-              <a href="#" className="btn theme-color-btn btn-primary" data-toggle="modal" data-target="#login-modal"><i className="fab fa-android"></i> Get HeroesMeet</a>
-
-              <a href="#" className="btn theme-color-btn btn-primary" data-toggle="modal" data-target="#login-modal"><i className="fab fa-apple"></i> Get HeroesMeet</a>
-
-            </div>
-          </div>
-          <div className="row">
-            <div className="col-md-12">
-              <div className="footer-social-icon">
-                <ul>
-                  <li><a href="#"><i className="fab fa-instagram"></i></a></li>
-                  <li><a href="#"><i className="fab fa-facebook-square"></i></a></li>
-                  <li><a href="#"><i className="fab fa-twitter-square"></i></a></li>
-                  <li><a href="#"><i className="fab fa-pinterest-square"></i></a></li>
-                </ul>
-              </div>
-            </div>
-          </div>
-        </footer>
-
-      </div>
-
-    </div>
-  </div>
-</header>
+              <MainHeader />
+           
 <section id="header-slider">
   <div id="demo" className="carousel slide" data-ride="carousel">
     <ul className="carousel-indicators">
@@ -297,148 +177,10 @@ class AppIndex extends Component {
 
 </div>
 </section>
+<Footer />
 
-<footer id="footer">
 
-  <div className="container">
-    <div className="row">
-      <div className="col-6 col-md-7">
-        <div className="footer-logo">
-          <img src={heroesmeetLogo} alt="User one" />
-        </div>
-      </div>
 
-      <div className="col-6 col-md-4">
-        <div className="footer-social-icon">
-          <ul>
-            <li><a href="#"><i className="fab fa-instagram"></i></a></li>
-            <li><a href="#"><i className="fab fa-facebook-square"></i></a></li>
-            <li><a href="#"><i className="fab fa-twitter-square"></i></a></li>
-            <li><a href="#"><i className="fab fa-pinterest-square"></i></a></li>
-          </ul>
-        </div>
-      </div>
-    </div>
-
-    <div className="row">
-      <div className="col-md-12">
-        <div className="footer-main-nav">
-          <ul>
-            <li><a href="#">FAQ</a></li>
-            <li><a href="#">Events</a></li>
-            <li><a href="#">Contact Us</a></li>
-            <li><a href="#">Guidelines</a></li>
-            <li><a href="#">Term & Conditions</a></li>
-            <li><a href="#">Privacy Policy</a></li>
-            <li><a href="#">Careers</a></li>
-          </ul>
-        </div>
-      </div>
-    </div>
-
-    <div className="row">
-      <div className="col-md-12">
-        <div className="copy-right">
-          <p> © 2020 HeroesMeet | All Rights Reserved </p>
-        </div>
-      </div>
-    </div>
-  </div>
-</footer>
-
-<div className="modal fade" id="login-modal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-  <div className="modal-dialog modal-lg" role="document">
-    <div className="modal-content">
-      <div className="modal-body">
-        <div className="row">
-          <div className="col-md-5">
-            <div className="row">
-              <div className="login-form">
-                <div className="logo">
-                  <img src={loginLogo} alt="User one" />
-                </div>
-                <form>
-                  <div className="input-group mb-3">
-                    <div className="input-group-prepend">
-                      <span className="input-group-text" id="basic-addon1"><i className="fas fa-envelope-open"></i></span>
-                    </div>
-                    <input type="text" className="form-control" placeholder="Email" aria-label="Email" aria-describedby="basic-addon1" />
-                  </div>
-
-                  <div className="input-group mb-3">
-                    <div className="input-group-prepend">
-                      <span className="input-group-text" id="basic-addon1"><i className="fas fa-unlock-alt"></i></span>
-                    </div>
-                    <input type="password" className="form-control" placeholder="Password" aria-label="Username" aria-describedby="basic-addon1" />
-                  </div>
-                  <button type="button" className="col-md-12 btn theme-color-them-btn btn-primary">Login</button>
-                </form>
-              </div>
-            </div>
-          </div>
-          <div className="col-md-7">
-            <div className="row">
-              <div className="login-left">
-                <button type="button" className="close" data-dismiss="modal" aria-label="Close">
-                  <span aria-hidden="true">&times;</span>
-                </button>
-                <h2>Find My Kind</h2>
-                <p>Why HeroesMeet? Everyone wants someone to save them from the malady of being in the single dating lifestyle.  So as much as you are saving her from she's saving you too.</p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
-
-<div className="modal login-signup-modal fade" id="signup-modal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-  <div className="modal-dialog modal-lg" role="document">
-    <div className="modal-content">
-      <div className="modal-body">
-        <div className="row">
-          <div className="col-md-5">
-            <div className="row">
-              <div className="login-form">
-                <div className="logo">
-                  <img src={loginLogo} alt="User one" />
-                </div>
-                <form>
-                  <div className="input-group mb-3">
-                    <div className="input-group-prepend">
-                      <span className="input-group-text" id="basic-addon1"><i className="fas fa-envelope-open"></i></span>
-                    </div>
-                    <input type="text" className="form-control" placeholder="Email" aria-label="Email" aria-describedby="basic-addon1" />
-                  </div>
-
-                  <div className="input-group mb-3">
-                    <div className="input-group-prepend">
-                      <span className="input-group-text" id="basic-addon1"><i className="fas fa-unlock-alt"></i></span>
-                    </div>
-                    <input type="password" className="form-control" placeholder="Password" aria-label="Username" aria-describedby="basic-addon1" />
-                  </div>
-                  <button type="button" className="col-md-12 btn theme-color-them-btn btn-primary">Get Started</button>
-                </form>
-              </div>
-            </div>
-          </div>
-          <div className="col-md-7">
-            <div className="row">
-              <div className="login-left">
-                <button type="button" className="close" data-dismiss="modal" aria-label="Close">
-                  <span aria-hidden="true">&times;</span>
-                </button>
-                <h2>Find My Kind</h2>
-                <p>Why HeroesMeet? Everyone wants someone to save them from the malady of being in the single dating lifestyle.  So as much as you are saving her from she's saving you too.</p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
             </div>
           );
         

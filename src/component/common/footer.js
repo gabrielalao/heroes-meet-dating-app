@@ -38,7 +38,7 @@ class Footer extends Component {
             <li><a href="#">Contact Us</a></li>
             <li><a href="#">Guidelines</a></li>
             <li><a href="#">Term & Conditions</a></li>
-            <li><a href="#">Privacy Policy</a></li>
+            <li><a onClick={()=>this.props.history.push('Privacy-Policy')}>Privacy Policy</a></li>
             <li><a href="#">Careers</a></li>
           </ul>
         </div>

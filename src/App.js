@@ -17,6 +17,7 @@ import loginUser from './component/login/loginUser';
 import userPassword from './component/login/userPassword';
 import Dashboard from './component/Dashboard';
 import userAcccountSettings from './component/userAcccountSettings';
+import privacyPolicy from './component/privacy-policy';
 
 
 function App() {
@@ -26,6 +27,7 @@ function App() {
     <div className='App'>
     <Switch>
     <Route path="/" exact component={AppIndex} />
+    <Route path="/Privacy-Policy" exact component={privacyPolicy} />
     <Route path="/signupStepOne" component={signupStep1} />
     <Route path="/signupStepTwo" component={signupStep2} />
     <Route path="/signupStepThree" component={signupStep3} />
