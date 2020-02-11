@@ -27,7 +27,16 @@ class Dashboard extends Component {
     document.getElementById("mySidenav").style.width = "0";
   }
 
+
+
+
   render() {
+
+    let UserData = JSON.parse(window.localStorage.getItem('userData'));
+    console.log('***** user data',UserData);
+
+
+
     return (
       <div>
         <UserDashboardHeader history={this.props.history} />
@@ -42,7 +51,7 @@ class Dashboard extends Component {
                         <a onClick={() => this.setState({ shown: !this.state.shown })}> <img src={userProfile} /> </a>
                       </div>
                       <div className="user-name">
-                        <a onClick={() => this.setState({ shown: !this.state.shown })}>  <h3>John Samith</h3></a>
+    <a onClick={() => this.setState({ shown: !this.state.shown })}>  <h3>{UserData.full_name}</h3></a>
                       </div>
                     </div>
                   </div>
