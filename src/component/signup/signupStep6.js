@@ -165,9 +165,9 @@ class SignupStep6 extends Component {
                   <a onClick={() => this.submit()} className="btn theme-color-them-btn btn-primary">Continue</a>
                 </div>
 
-                <div className="col-md-12 text-center">
+                {/* <div className="col-md-12 text-center">
                   <a className="use-my-contact">Use Facebook Instead</a>
-                </div>
+                </div> */}
 
               </div>
               <div className="col-md-4">
