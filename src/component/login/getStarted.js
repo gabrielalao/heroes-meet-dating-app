@@ -25,6 +25,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import {withRouter} from 'react-router-dom';
 import MetaTags from 'react-meta-tags';
 import Favicon from 'react-favicon';
+import FacebookLogin from 'react-facebook-login';
 
 class getStarted extends Component {
   constructor(props) {
@@ -37,6 +38,16 @@ class getStarted extends Component {
     e.preventDefault();
     this.props.history.push('/loginUser')
   };
+
+  responseFacebook(response) {
+    console.log('response fb ****** ',response)
+    if(response.accessToken){
+      this.props.history.push('/dashboard')
+      window.localStorage.setItem('loginData',JSON.stringify(response))
+    }else{
+      alert('An error occured during registeration. Please check your credentials')
+    }
+  }
 
   render() {
     return (
@@ -75,7 +86,14 @@ class getStarted extends Component {
     <div class="row">
       <div class="text-center col-md-12">
         <h2 class="get-started">Welcome back!<br/>  How do you want to continue? </h2>
-        <a href="#" class="facebook btn btn-primary">Use Facebook</a>
+        {/* <a href="#" class="facebook btn btn-primary">Use Facebook</a> */}
+        <FacebookLogin
+          appId="1844922302311752"
+          cssClass="facebook btn btn-primary"
+          textButton='Use Facebook'
+          autoLoad={false}
+          callback={(e)=>this.responseFacebook(e)}
+        />
       </div>
       <div class="col-md-12 text-center">
         <p class="or">OR</p>
