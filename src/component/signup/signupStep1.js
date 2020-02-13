@@ -53,7 +53,7 @@ class SignupStep1 extends Component {
                 <h2 class="get-started">Welcome! How do you want to <br /> get started? </h2>
                 {/* <a href="" onClick={this.fbLogin} class="facebook btn btn-primary">Use Facebook</a> */}
                 <FacebookLogin
-                  appId="1844922302311752"
+                  appId="776885439465346"
                   cssClass="facebook btn btn-primary"
                   textButton='Use Facebook'
                   autoLoad={false}

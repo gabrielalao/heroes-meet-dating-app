@@ -88,7 +88,7 @@ class getStarted extends Component {
         <h2 class="get-started">Welcome back!<br/>  How do you want to continue? </h2>
         {/* <a href="#" class="facebook btn btn-primary">Use Facebook</a> */}
         <FacebookLogin
-          appId="1844922302311752"
+          appId="776885439465346"
           cssClass="facebook btn btn-primary"
           textButton='Use Facebook'
           autoLoad={false}
