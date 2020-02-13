@@ -703,6 +703,11 @@ text-align: left;
     margin: 60px auto 0;
 }
 
+.heroesmeet_main_logo a {
+    display: inline-block;
+    text-align: center;
+}
+
 #signup-screen {
     padding: 5% 0 10%;
 }

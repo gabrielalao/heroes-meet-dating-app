@@ -33,11 +33,11 @@ class Footer extends Component {
       <div class="col-md-12">
         <div class="footer-main-nav">
           <ul>
-            <li><a href="#">FAQ</a></li>
-            <li><a href="#">Events</a></li>
-            <li><a href="#">Contact Us</a></li>
-            <li><a href="#">Guidelines</a></li>
-            <li><a href="#">Term & Conditions</a></li>
+            <li><a onClick={()=>this.props.history.push('FAQ')}>FAQ</a></li>
+            <li><a onClick={()=>this.props.history.push('Events')}>Events</a></li>
+            <li><a onClick={()=>this.props.history.push('ContactUs')}>Contact Us</a></li>
+            <li><a onClick={()=>this.props.history.push('Guidelines')}>Guidelines</a></li>
+            <li><a onClick={()=>this.props.history.push('TermConditions')}>Term & Conditions</a></li>
             <li><a onClick={()=>this.props.history.push('Privacy-Policy')}>Privacy Policy</a></li>
             <li><a href="#">Careers</a></li>
           </ul>

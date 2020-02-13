@@ -33,18 +33,18 @@ class MainHeader extends Component {
                <div className="collapse navbar-collapse" id="site-main-bar">
                  <ul className="navbar-nav">
                    <li className="nav-item active">
-                     <a className="nav-link" href="#">GUIDELINES <span className="sr-only">(current)</span></a>
+                   <a className="nav-link" onClick={()=>this.props.history.push('Guidelines')}>GUIDELINES <span className="sr-only">(current)</span></a>
                    </li>
                    <li className="nav-item">
-                     <a className="nav-link" href="#">STORIES</a>
-                   </li>
-     
-                   <li className="nav-item">
-                     <a className="nav-link" href="#">ABOUT US</a>
+                   <a className="nav-link" onClick={()=>this.props.history.push('Stories')}>STORIES</a>
                    </li>
      
                    <li className="nav-item">
-                     <a className="nav-link" href="#">CONTACT</a>
+                   <a className="nav-link" onClick={()=>this.props.history.push('AboutUs')}>ABOUT US</a>
+                   </li>
+     
+                   <li className="nav-item">
+                   <a className="nav-link" onClick={()=>this.props.history.push('ContactUs')}>CONTACT</a>
                    </li>
                  </ul>
                </div>

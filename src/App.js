@@ -18,6 +18,14 @@ import userPassword from './component/login/userPassword';
 import Dashboard from './component/Dashboard';
 import userAcccountSettings from './component/userAcccountSettings';
 import privacyPolicy from './component/privacy-policy';
+import FAQ from './component/FAQ';
+import Careers from './component/Careers';
+import ContactUs from './component/ContactUs';
+import Events from './component/Events';
+import Guidelines from './component/Guidelines';
+import Stories from './component/Stories';
+import TermConditions from './component/TermConditions';
+import Aboutus from './component/Aboutus';
 
 
 function App() {
@@ -42,8 +50,14 @@ function App() {
     <Route path="/UserLoginPassword" component={userPassword} />
     <Route path="/dashboard" component={Dashboard} />
     <Route path="/userAccountSetting" component={userAcccountSettings} />
-
-     
+    <Route path="/Aboutus" component={Aboutus} />
+    <Route path="/FAQ" component={FAQ} />
+    <Route path="/Careers" component={Careers} />
+    <Route path="/ContactUs" component={ContactUs} />
+    <Route path="/Events" component={Events} />
+    <Route path="/Guidelines" component={Guidelines} />
+    <Route path="/Stories" component={Stories} />
+    <Route path="/TermConditions" component={TermConditions} />
      </Switch>
     </div>
  
